@@ -357,8 +357,7 @@ img {
 }
 
 #column_w300 {
-  display: inline;
-  width: 800px;
+  display: grid;
   background: #efefef;
   border: 1px solid #6e6767;
 }

@@ -50,8 +50,8 @@ img {
 }
 
 .abc {
-  font-family: Georgia;
-  font-size: 20px;
+  font-family: sans-serif;
+  font-size: 22px;
   color: white;
   float: center;
 }
@@ -210,6 +210,9 @@ img {
   width: 1150px;
   margin: 0 auto;
 }
+#templatemo_header a:hover {
+  color: #000;
+}
 
 #templatemo_header #site_logo {
   float: left;
@@ -357,14 +360,17 @@ img {
 }
 
 #column_w300 {
-  display: grid;
+  display: inline-table;
+  width: 80%;
+  margin-left: 100px;
+  margin-top: 100px;
   background: #efefef;
   border: 1px solid #6e6767;
 }
 
 #column_w530 .em_text {
   color: rgb(220, 62, 62);
-  text-align: inherit;
+  text-align: center;
 }
 
 #column_w530 p {
@@ -384,6 +390,7 @@ img {
 }
 
 .content_section_01 {
+  text-align: center;
   border-left: 10px solid #536592;
   padding-left: 20px;
 }
@@ -396,6 +403,7 @@ img {
 
 .even_color {
   background: #e0dfdf;
+  text-align: center;
 }
 
 .news_image_wrapper {
@@ -415,7 +423,7 @@ img {
 }
 
 .news_content {
-  float: left;
+  text-align: center;
   width: 370px;
 }
 
@@ -428,7 +436,7 @@ img {
   line-height: 16px;
   font-size: 14px;
   color: #454545;
-  text-align: justify;
+  text-align: center;
 }
 
 /* end of content

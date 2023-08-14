@@ -1,7 +1,3 @@
-/*
-CSS Credit: http://www.templatemo.com/
-*/
-
 body {
   font-size: 16px;
   margin: 0;
@@ -148,7 +144,8 @@ img {
   clear: both;
   padding-bottom: 10px;
   margin-bottom: 10px;
-  font-size: 30px;
+  margin-left: 0px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 30px;
   color: #ffffff;
@@ -168,6 +165,7 @@ img {
 
 .header_03 {
   clear: both;
+  float: inline-end;
   height: 35px;
   padding: 15px 0 0 20px;
   font-size: 18px;
@@ -281,7 +279,7 @@ img {
 /* end of header */
 
 #templatemo_banner_wrapper {
-  background-image: url("./background.jpg");
+  background-image: url("../NEM-Lab/img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,7 +305,7 @@ img {
 #templatemo_banner_content {
   float: right;
   text-align: left;
-  width: 460px;
+  width: 700px;
 }
 
 #templatemo_banner_content p {
@@ -340,6 +338,7 @@ img {
   clear: both;
   width: 1100px;
   margin: 0 auto;
+  padding: auto;
   background: #ffffff;
 }
 
@@ -358,8 +357,8 @@ img {
 }
 
 #column_w300 {
-  display: inline-block;
-  width: 400px;
+  display: inline;
+  width: 800px;
   background: #efefef;
   border: 1px solid #6e6767;
 }
@@ -504,7 +503,7 @@ img {
 
 #column_w1000 .em_text {
   color: #000;
-  text-align: justify;
+  text-align: center;
 }
 
 #column_w1000 p {
@@ -512,4 +511,13 @@ img {
   font-size: 15px;
 }
 
+.em_text {
+  text-align: justify;
+}
+.Lab-content {
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 20px;
+  font-size: large;
+}
 /* end of footer */

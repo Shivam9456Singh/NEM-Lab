@@ -510,7 +510,8 @@ img {
 }
 
 .button {
-  background-color: #3f6969;
+  /* background: linear-gradient(to bottom, #89cff0, #00509e); */
+  background-color: rgb(71, 72, 74);
   color: white;
   text-align: center;
   padding: 10px 25px;
@@ -520,6 +521,7 @@ img {
   border: none;
   cursor: pointer;
   border-radius: 12px;
+  margin: 7px;
 }
 
 #column_w1000 {
@@ -556,7 +558,9 @@ img {
   margin-left: 20px;
   font-size: large;
 }
-
+.bordered-iframe {
+  border: 2px solid #000;
+}
 /* end of footer */
 
 #dr.ajay_brief {

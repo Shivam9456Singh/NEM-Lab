@@ -283,7 +283,7 @@ img {
 /* end of header */
 
 #templatemo_banner_wrapper {
-  background-image: url("../NEM-Lab/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -449,18 +449,24 @@ img {
 #templatemo_footer_wrapper {
   width: 100%;
   margin: 0 auto;
-  background: #3f6969 repeat-x;
+  background: #727777;
 }
 
 #templatemo_footer {
-  width: 920px;
-  padding: 30px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 30px 30px;
   margin: 0 auto;
-  color: white;
 }
 
 #templatemo_footer a {
   text-decoration: none;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 500;
+  font-family: sans-serif;
   color: rgb(38, 176, 52);
 }
 

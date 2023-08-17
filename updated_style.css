@@ -6,7 +6,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 12px;
   color: #666;
-  background: #ffffff;
+  background-color: rgba(196, 214, 195, 0.338);
 }
 
 .column_w530,

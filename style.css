@@ -6,7 +6,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 12px;
   color: #666;
-  background: #ffffff;
+  background-color: rgba(196, 214, 195, 0.338);
 }
 .column_w530,
 .column_w300 {
@@ -282,7 +282,7 @@ img {
 /* end of header */
 
 #templatemo_banner_wrapper {
-  background-image: url("../NEM-Lab/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -56,29 +56,54 @@
   <!-- end of banner wrapper -->
 
   <div id="" style="display: flex">
-    <div id="Welcome_div" style="
-            margin-left: 100px;
-            margin-top: 10px;
-            margin-right: 15px;
-            border: 1px solid rgb(79, 79, 79);
-            ">
-      <h1 style="
-                font-size: 30px;
-                text-align: left;
-                margin-left: 20%;
-                color: black;
-            ">
-        Welcome to our research group page!
-      </h1>
-      <p style="
-                margin-top: 4%;
-                margin-left: 2%;
-                margin-right: 2%;
-                font-size: large;
-                letter-spacing: 1px;
-                font-family: sans-serif;
-                text-align: justify;
-            ">
+
+    <style>
+      #Welcome_div {
+        margin: 1% 2%;
+        border: 1px solid rgb(79, 79, 79);
+        padding: 20px;
+        position: relative;
+        /* To position the image responsively */
+      }
+
+      #Welcome_div h1 {
+        font-size: 30px;
+        text-align: left;
+        margin-left: 20%;
+        color: black;
+      }
+
+      #Welcome_div p {
+        color: black;
+        margin: 4% 2%;
+        font-size: large;
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        text-align: justify;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+      }
+
+      .image-container img {
+        width: auto;
+        /* Make the image take the full width of its container */
+        height: 10%;
+        /* Height adjusts automatically */
+        max-height: 50%;
+        /* Limit the height to 50% of the container */
+        margin: 1% 0;
+        /* Vertical margins, no horizontal margins needed */
+      }
+    </style>
+
+    <div id="Welcome_div">
+      <h1>Welcome to our research group page!</h1>
+      <p>
         Our Group is motivated to develop low cost, large scale, and facile
         materials for clean energy, electronics & electrochemical devices. At
         present, the group works on synthesis of functional nanomaterials and
@@ -87,14 +112,16 @@
         properties of nanoscale materials and effect of interfacial properties
         on electrochemical devices.
       </p>
-      <img src="../img/group.jpeg" alt=""
-        style="  height: 60%; width: 75%;margin-left: 2%; margin-top: 1%;margin-bottom: 2%; " />
+      <div class="image-container">
+        <img src="../img/group.jpeg" alt="" />
+      </div>
     </div>
 
-    <div id="dr.ajay_brief" style="margin-left: 0; margin-top: 10px; margin-right: 100px">
+
+    <div id="dr.ajay_brief" style="margin-top: 1%; margin-right: 2%">
       <div style="margin-right: 0px">
         <div style="margin-top: 10px">
-          <img src="../img/AKK sir.jpeg" alt="" height="300px"
+          <img src="../img/AKK sir.jpeg" alt="" height="250px"
             style="justify-content: center; align-items: center;" /><br />
         </div>
 
@@ -146,8 +173,35 @@
   </div>
   <!-- end of content wrapper -->
   <div>
+    <style>
+      /* Base style for all ul elements */
+      ul {
+        list-style-type: none;
+        text-align: justify;
+        color: black;
+        font-family: sans-serif;
+        font-weight: 500;
+        font-size: 100%;
+        /* Remove bullet points */
+        padding: 10px;
+        /* Add some padding for aesthetics */
+      }
+
+      /* Style for odd ul elements */
+      #column_w300 ul:nth-child(odd) {
+        background-color: #d4cfcf;
+        /* Off-white */
+      }
+
+      #column_w300 ul:nth-child(even) {
+        background-color: #ebebeb;
+        /* Light gray */
+      }
+    </style>
+
     <div id="column_w300">
-      <div class="header_03" style="text-align: center;border-radius: 5px; background-color: rgb(43, 45, 43)">
+      <div class="header_03"
+        style="text-align: center;border-radius: 5px; background-color: rgb(53, 57, 53); font-family:sans-serif;">
         News
       </div>
 
@@ -181,7 +235,11 @@
 
     </div>
 
-    <div class="cleaner"></div>
+
+
+  </div>
+
+  <div class="cleaner"></div>
   </div> <!-- end of content wrapper -->
   </div> <!-- end of content wrapper -->
   </div>

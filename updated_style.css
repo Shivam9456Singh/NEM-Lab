@@ -6,13 +6,21 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 12px;
   color: #666;
-  background: #ffffff;
+  background-color: rgba(196, 214, 195, 0.338);
 }
 
 .column_w530,
 .column_w300 {
   float: right;
   width: 100%; /* example value */
+}
+#column_w300 {
+  display: inline-table;
+  width: 80%;
+  margin-left: 100px;
+  margin-top: 100px;
+  background: #efefef;
+  border: 1px solid #6e6767;
 }
 
 @media only screen and (max-width: 768px) {
@@ -283,7 +291,8 @@ img {
 /* end of header */
 
 #templatemo_banner_wrapper {
-  background-image: url("../NEM-Lab/img/background.jpg");
+  background: linear-gradient(rgba(234, 212, 212, 0.6), rgba(58, 54, 54, 0.6)),
+    url("../img/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -449,18 +458,24 @@ img {
 #templatemo_footer_wrapper {
   width: 100%;
   margin: 0 auto;
-  background: #3f6969 repeat-x;
+  background: #727777;
 }
 
 #templatemo_footer {
-  width: 920px;
-  padding: 30px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 30px 30px;
   margin: 0 auto;
-  color: white;
 }
 
 #templatemo_footer a {
   text-decoration: none;
+  font-size: 14px;
+  align-items: center;
+  font-weight: 500;
+  font-family: sans-serif;
   color: rgb(38, 176, 52);
 }
 

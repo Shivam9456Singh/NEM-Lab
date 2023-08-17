@@ -83,21 +83,32 @@
       }
 
       .image-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slide {
+        width: 600px;
+        height: 300px;
+        max-height: 5%;
+        margin: 1% 0;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .slide:first-child {
+        opacity: 1;
       }
 
       .image-container img {
-        width: auto;
-        /* Make the image take the full width of its container */
-        height: 10%;
-        /* Height adjusts automatically */
-        max-height: 50%;
-        /* Limit the height to 50% of the container */
+        width: 600px;
+        /* Adjust as needed */
+        height: 300px;
+        /* Reduced from 10% to 5% */
+        max-height: 5%;
+        /* Reduced from 50% to 25% */
         margin: 1% 0;
-        /* Vertical margins, no horizontal margins needed */
       }
     </style>
 
@@ -113,10 +124,25 @@
         on electrochemical devices.
       </p>
       <div class="image-container">
-        <img src="../img/group.jpeg" alt="" />
+        <img src="../img/group.jpeg" alt="" class="slide">
+        <img src="../img/AKK sir.jpeg" alt="" class="slide">
+        <img src="../img/iiti logo.png" alt="" class="slide">
+        <!-- Add more images as necessary -->
       </div>
     </div>
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
+      slides[0].style.opacity = 1;  // Make sure the first slide is visible
 
+      function startSlideshow() {
+        slides[currentSlide].style.opacity = 0;
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.opacity = 1;
+      }
+
+      setInterval(startSlideshow, 3000);  // Start the slideshow
+    </script>
 
     <div id="dr.ajay_brief" style="margin-top: 1%; margin-right: 2%">
       <div style="margin-right: 0px">

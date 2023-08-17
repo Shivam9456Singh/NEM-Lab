@@ -10,3 +10,8 @@ function changeButtonColor(clickedButton) {
   // Set color for clicked button
   clickedButton.style.backgroundColor = "rgba(71, 156, 71, 0.575)";
 }
+
+function resizeIframe(obj) {
+  obj.style.height =
+    obj.contentWindow.document.documentElement.scrollHeight + "px";
+}

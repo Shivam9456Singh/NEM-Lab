@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-size: 16px;
   margin: 0;
@@ -14,15 +18,14 @@ body {
   float: right;
   width: 100%; /* example value */
 }
-
 @media only screen and (max-width: 768px) {
   body {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .column_w530,
   .column_w300 {
-    float: none;
+    float: flex;
     width: 100%;
   }
 }
@@ -143,10 +146,10 @@ img {
 
 .header_01 {
   clear: both;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  font-size: 50px;
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  margin-left: 0%;
+  font-size: 45px;
   font-weight: 700;
   line-height: 30px;
   color: #ffffff;
@@ -296,28 +299,24 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  clear: both;
   width: 100%;
-  height: 200px;
-  margin: 0 auto;
+  height: 250px;
+  margin: auto;
 }
 
 #templatemo_banner {
-  width: 900px;
-  height: 200px;
-  margin: 0 auto;
-  padding: 10px 0px 10px;
-  background: bottom no-repeat;
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Distribute space between the items */
 }
-
 #templatemo_banner #templatemo_banner_image {
-  float: left;
-  width: 350px;
+  height: 180px;
+  margin-right: 20px;
 }
 
 #templatemo_banner_content {
   float: right;
-  text-align: left;
+  text-align: center;
   width: 700px;
 }
 
@@ -373,7 +372,7 @@ img {
   display: inline-table;
   width: 100%;
   align-items: center;
-  /* margin-left: 10%; */
+  margin-left: 0%;
   margin-top: 2%;
   margin-bottom: 2%;
   background: #efefef;
@@ -474,9 +473,9 @@ img {
   text-decoration: none;
   font-size: 14px;
   align-items: center;
-  font-weight: 500;
+  font-weight: 700;
   font-family: sans-serif;
-  color: rgb(38, 176, 52);
+  color: rgb(207, 249, 37);
 }
 
 .section_w180 {
@@ -507,8 +506,7 @@ img {
 }
 
 .button {
-  /* background: linear-gradient(to bottom, #89cff0, #00509e); */
-  background-color: rgb(71, 72, 74);
+  background-color: #3f6969;
   color: white;
   text-align: center;
   padding: 10px 25px;
@@ -518,7 +516,6 @@ img {
   border: none;
   cursor: pointer;
   border-radius: 12px;
-  margin: 7px;
 }
 
 #column_w1000 {
@@ -555,9 +552,7 @@ img {
   margin-left: 20px;
   font-size: large;
 }
-.bordered-iframe {
-  border: 2px solid #000;
-}
+
 /* end of footer */
 
 #dr.ajay_brief {

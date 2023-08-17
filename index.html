@@ -43,13 +43,13 @@
 
   <div id="templatemo_banner_wrapper">
     <div id="templatemo_banner">
-      <img id="img" src="../img/iiti logo.png" alt="image" height="180" style="float: left" />
+      <img id="img" src="../img/iiti logo.png" alt="image" height="180" />
 
       <div id="templatemo_banner_content">
         <div class="header_01"><br /><br />Nano & Energy Materials Lab</div>
       </div>
 
-      <div class="cleaner"></div>
+      <img id="img" src="../img/Lab-logo.png" alt="image" height="180" />
     </div>
     <!-- end of banner -->
   </div>
@@ -60,7 +60,6 @@
     <style>
       #Welcome_div {
         margin: 1% 2%;
-        border: 1px solid rgb(79, 79, 79);
         padding: 20px;
         position: relative;
         /* To position the image responsively */
@@ -84,22 +83,26 @@
 
       .image-container {
         position: relative;
+        width: 600px;
+        height: 300px;
         overflow: hidden;
       }
 
       .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 600px;
         height: 300px;
-        max-height: 5%;
-        margin: 1% 0;
-        position: absolute;
         opacity: 0;
         transition: opacity 1s;
       }
 
+
       .slide:first-child {
         opacity: 1;
       }
+
 
       .image-container img {
         width: 600px;
@@ -124,77 +127,77 @@
         on electrochemical devices.
       </p>
       <div class="image-container">
-        <img src="../img/group.jpeg" alt="" class="slide">
-        <img src="../img/AKK sir.jpeg" alt="" class="slide">
-        <img src="../img/iiti logo.png" alt="" class="slide">
-        <!-- Add more images as necessary -->
+        <img src="../img/group.jpeg" alt="Group" class="slide" style="opacity: 1;">
+        <img src="../img/AKK sir.jpeg" alt="Sir" class="slide">
+        <img src="../img/iiti logo.png" alt="Logo" class="slide">
       </div>
+
     </div>
-    <script>
-      let currentSlide = 0;
-      const slides = document.querySelectorAll(".slide");
-      slides[0].style.opacity = 1;  // Make sure the first slide is visible
 
-      function startSlideshow() {
-        slides[currentSlide].style.opacity = 0;
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].style.opacity = 1;
-      }
 
-      setInterval(startSlideshow, 3000);  // Start the slideshow
-    </script>
-
-    <div id="dr.ajay_brief" style="margin-top: 1%; margin-right: 2%">
-      <div style="margin-right: 0px">
-        <div style="margin-top: 10px">
-          <img src="../img/AKK sir.jpeg" alt="" height="250px"
-            style="justify-content: center; align-items: center;" /><br />
+    <div id="dr.ajay_brief" style="margin-top: 1%; margin-right: 10%">
+      <div style="display: flex; flex-direction: column; align-items: center; margin-right: 10px;">
+        <div style="margin-top: 1%">
+          <img src="../img/AKK sir.jpeg" alt="" height="250px" />
         </div>
 
-        <div style="width: 30px; display: inline-table"></div>
-        <div class="cleaner"></div>
+        <h3 style="
+          color: black;
+          font-family: sans-serif;
+          text-align: center;
+          font-size: 18px;">
+          Prof. Ajay Kumar Kushwaha
+        </h3>
 
-        <div>
-          <h3 style="
-                color: black;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular',
-                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-                  sans-serif;
-                text-align: center;
-                font-size:20px;
-              ">
-            Prof. Ajay Kumar Kushwaha
-          </h3>
-          <p style="
-                color: black;
-                font-size: 10px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular',
-                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-                  sans-serif;
-                font-size: 14px;
-                font-weight: 600;
-              ">
-            M.Sc. (Physics), Ph.D.(IIT Bombay) <br>Associate Professor & Head<br>
-            Department of Metallurgical Engineering and Materials Science. <br>
-            Faculty, Center for Advanced Electronics Indian Institute of
-            Technology Indore
-            <br>&nbsp;
-          </p>
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 11px;
+          font-weight: 600;
+          margin-bottom: 0;
+          margin-left: 0px;">
+          M.Sc. (Physics), Ph.D. (IIT Bombay)
+        </p>
 
-          <p style="
-                color: rgb(39, 167, 227);
-                font-size: 10px;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular',
-                  'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-                  sans-serif;
-                font-size: 14px;
-              ">
-            Khandwa Road, Simrol, Indore-453552, INDIA <br>Phone No.:
-            +91-731-660-3250 (Office), 5111 (Lab) <br>Email: akk@iiti.ac.in
-          </p>
-        </div>
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 11px;
+          margin-top: 0;">
+          <b style="font-size: 14px; font-style: italic;">Associate Professor & Head</b>
+        </p>
+
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 12px;
+          margin-top: 0;">
+          Department of Metallurgical Engineering and Materials Science.
+        </p>
+
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 12px;
+          margin-top: 0;">
+          <b style="font-style: italic;">Faculty, &nbsp</b>
+          Center for Advanced Electronics
+        </p>
+
+        <p
+          style="
+          color: rgb(39, 167, 227);
+          font-size: 14px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          <br>Phone No.: +91-731-660-3250 (Office), 5111 (Lab) <br>Email: akk@iiti.ac.in
+        </p>
       </div>
     </div>
+
     <!-- end of content wrapper -->
   </div>
   <!-- end of content wrapper -->
@@ -227,38 +230,35 @@
 
     <div id="column_w300">
       <div class="header_03"
-        style="text-align: center;border-radius: 5px; background-color: rgb(53, 57, 53); font-family:sans-serif;">
+        style="text-align: center;font-size:20px;letter-spacing: 1px; background-color: rgb(88, 87, 87); font-family:sans-serif;">
         News
       </div>
 
-      <ul>
+      <ul style="margin-left: 5%; word-spacing:1px; font-family:sans-serif; padding: 0; font-size: 15px; ">
         Dr. Kushwaha: BEST PAPER PRESENTATION AWARD in 11th Asia Conference on
         Mechanical and Materials Engineering, JAPAN 08-11 June 2023.
       </ul>
-      <ul>
+      <ul style="margin-left: 5%; word-spacing:1px; font-family:sans-serif;  padding: 0;font-size: 15px;">
         Dr. Kushwaha: Visited The University of Tokyo & Tokyo University of
         Agriculture and Technology, 12-13 June 2023.
       </ul>
-      <ul>
+      <ul style="margin-left: 5%; word-spacing:1px; font-family:sans-serif;  padding: 0;font-size: 15px;">
         Dr. Kushwaha: Visited several Universities and Industries in Taiwan
         (with IIT Indore delegation), 14-20 May, 2023.
       </ul>
-      <ul>
+      <ul style="margin-left: 5%; word-spacing:1px; font-family:sans-serif;  padding: 0;font-size: 15px;">
         Dr. Kushwaha: Joined as HEAD of Department, MEMS, IIT Indore, 30th
         March, 2023.
       </ul>
-      <ul>
+      <ul style="margin-left: 5%; word-spacing:1px; font-family:sans-serif; padding: 0;font-size: 15px;">
         Mr. Akshay Sonawane: Joined the group as PhD Fellow (DST INSPIRE), 01
         Jan, 2023
       </ul>
-      <ul>
+      <ul style="margin-left: 5%; word-spacing:1px; font-family:sans-serif; padding: 0;font-size: 15px;">
         Dr. Kushwaha: served as GENERAL-CHAIR for 'International Conference on
         Frontiers in Materials Engineering' (ICFME-2022), 14-16 December 2022,
         at IIT Indore.
       </ul>
-
-      <div class="cleaner"></div>
-
     </div>
 
 
@@ -270,17 +270,43 @@
   </div> <!-- end of content wrapper -->
   </div>
   <div id="templatemo_footer_wrapper" style="background-color: rgba(14, 38, 14, 0.779);">
-    <div id="templatemo_footer">
-      <p style="color: rgb(255, 255, 255); font-family: sans-serif; font-size: 14px; margin-right: 20px;">Copyright ©
-        2023 NEM Lab IIT INDORE</p>
-      <p style="color: rgb(255, 255, 255); font-family: sans-serif; font-size: 14px;">Developers&nbsp&nbsp
-      <p><a href="https://www.linkedin.com/in/shivam-singh-a19a32214/"> Shivam </a><a
-          href="https://www.linkedin.com/in/prosenjitmondal98/">& Prosenjit</a></p>
+    <div>
+      <p style="color: white; font-family: sans-serif; font-size: 14px; text-align: center;padding-top: 1%;"> 204 A POD
+        1D, Department
+        Of MEMS, IIT Indore,
+        Khandwa Road, Simrol, Indore-453552, INDIA
+        <br>&nbsp
+        contact : +91-731-660-5111 &nbsp &nbsp&nbsp&nbspEmail: neml@iiti.ac.in
       </p>
+    </div>
+    <div id="templatemo_footer">
+      <p
+        style="color: rgb(255, 255, 255); font-family: sans-serif; font-size: 14px; margin-right: 20px; margin-left: 0;">
+        Copyright © 2023 NEM Lab IIT INDORE
+      </p>
+      <div>
+        <p style="color: rgb(255, 255, 255); font-family: sans-serif; font-size: 14px; margin: 0;">
+          Developers&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/"> Shivam </a> &
+          <a href="https://www.linkedin.com/in/prosenjitmondal98/">Prosenjit</a>
+        </p>
+      </div>
     </div> <!-- end of footer -->
-  </div> <!-- end of footer wrapper -->
 
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
 
+      function startSlideshow() {
+        slides[currentSlide].style.opacity = 0;
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.opacity = 1;
+      }
+
+      setInterval(startSlideshow, 3000);
+
+  // Start the slideshow
+    </script>
 </body>
 
 </html>

@@ -14,15 +14,15 @@
       content="Simple Blue - Professional free XHTML/CSS template provided by templatemo.com"
     />
     <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="members.css">
+    <link rel="stylesheet" href="updated_style.css" />
+
     <script language="javascript" type="text/javascript">
       function clearText(field) {
         if (field.defaultValue == field.value) field.value = "";
         else if (field.value == "") field.value = field.defaultValue;
       }
     </script>
-    <script src="myjavascript.js"></script>
+    <script src="change_button_color.js"></script>
   </head>
 
   <body>
@@ -85,55 +85,68 @@
       <!-- end of banner -->
     </div>
     <div id="templatemo_content_wrapper">
-        <div id="column_w1000">
-            <div id="content_buttons">
-                <a href="../NEM-Lab/members_pages/post_doc.html" target="iframe1"
-                    ><button
-                    class="button"
-                    id="button1"
-                    onclick="changeButtonColor1()"
-                    style="background-color: #2daaaa"
-                    >
-                    Post doc
-                    </button></aS
-                >
-                <a href="Ph.D.html" target="iframe1"
-                    ><button class="button" id="button2" onclick="changeButtonColor2()">
-                    Ph.D
-                    </button></a
-                >
-                <a href="B.Tech/M.Tech.html" target="iframe1"
-                    ><button class="button" id="button3" onclick="changeButtonColor3()">
-                    B.Tech/M.Tech
-                    </button></a
-                >
-                <a href="alumni.html" target="iframe1"
-                    ><button class="button" id="button4" onclick="changeButtonColor4()">
-                    Alumani
-                    </button></a
+      <div id="column_w1000">
+        <div id="content_buttons">
+          <a href="../NEM-Lab/members_pages/post_doc.html" target="iframe1">
+            <button
+              class="button"
+              id="button1"
+              onclick="changeButtonColor(this)"
+            >
+              post doc.
+            </button>
+          </a>
+          <a href="../NEM-Lab/members_pages/Ph.d.html" target="iframe1">
+            <button
+              class="button"
+              id="button2"
+              onclick="changeButtonColor(this)"
+            >
+              Phd
+            </button>
+          </a>
+          <a href="../NEM-Lab/members_pages/mtech_btech.html" target="iframe1">
+            <button
+              class="button"
+              id="button3"
+              onclick="changeButtonColor(this)"
+            >
+              M.Tech/B.Tech
+            </button>
+          </a>
+          <a href="../NEM-Lab/members_pages/alumni.html" target="iframe1">
+            <button
+              class="button"
+              id="button4"
+              onclick="changeButtonColor(this)"
+            >
+              Alumni
+            </button>
+          </a>
 
-                ><a href="visitors.html" target="iframe1"
-                ><button class="button" id="button4" onclick="changeButtonColor4()">
-                    Visitors
-                </button></a
-                >
-
-            </div>
-                <br /><br />
-                
-                    <iframe
-                        src="../NEM-Lab/members_pages/post_doc.html"
-                        name="iframe1"
-                        height="1050"
-                        width="1000"
-                        frameborder="0"
-                    >
-                    </iframe>
-                
-                <div class="cleaner"></div>
-            </div>
+          <a href="../NEM-Lab/members_pages/visitors.html" target="iframe1">
+            <button
+              class="button"
+              id="button6"
+              onclick="changeButtonColor(this)"
+            >
+              Visitors
+            </button>
+          </a>
         </div>
+        <br /><br />
+        <iframe
+          class="bordered-iframe"
+          src="../NEM-Lab/members_pages/post_doc.html"
+          name="iframe1"
+          height="1050"
+          width="1000"
+          frameborder="0"
+        >
+        </iframe>
+        <div class="cleaner"></div>
       </div>
+    </div>
     <!-- end of content wrapper -->
 
     <!-- end of footer -->

@@ -207,15 +207,23 @@ img {
   width: 100%;
   height: 60px;
   margin: 0 auto;
-  background: rgba(1, 56, 1, 0.619);
+  background: rgba(71, 156, 71, 0.575);
 }
+
+/* #templatemo_header_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+} */
 
 #templatemo_header {
   width: 1150px;
   margin: 0 auto;
 }
 #templatemo_header a:hover {
-  color: rgb(255, 255, 0);
+  color: #000;
 }
 
 #templatemo_header #site_logo {

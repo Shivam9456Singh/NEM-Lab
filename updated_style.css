@@ -207,7 +207,7 @@ img {
   width: 100%;
   height: 60px;
   margin: 0 auto;
-  background: rgba(71, 156, 71, 0.575);
+  background: rgba(8, 62, 8, 0.575);
 }
 
 /* #templatemo_header_wrapper {
@@ -223,7 +223,7 @@ img {
   margin: 0 auto;
 }
 #templatemo_header a:hover {
-  color: #000;
+  color: rgb(255, 235, 56);
 }
 
 #templatemo_header #site_logo {

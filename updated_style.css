@@ -549,6 +549,12 @@ img {
   flex-direction: row;
   margin-top: 20px;
 }
+#content_buttons .button:hover {
+  background-color: rgba(3, 75, 22, 0.845);
+}
+#content_buttons .button:focus {
+  background-color: rgba(3, 75, 22, 0.845);
+}
 
 .em_text {
   text-align: justify;

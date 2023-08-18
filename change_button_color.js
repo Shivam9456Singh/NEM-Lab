@@ -4,11 +4,11 @@ function changeButtonColor(clickedButton) {
 
   // Reset color for all buttons
   for (var i = 0; i < buttons.length; i++) {
-    buttons[i].style.backgroundColor = "rgb(71, 72, 74)"; // Default color
+    buttons[i].style.backgroundColor = "rgba(11, 156, 47, 0.845)"; // Default color
   }
 
   // Set color for clicked button
-  clickedButton.style.backgroundColor = "rgba(71, 156, 71, 0.575)";
+  clickedButton.style.backgroundColor = "rgba(3, 75, 22, 0.845)";
 }
 
 function resizeIframe(obj) {

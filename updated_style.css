@@ -452,6 +452,9 @@ img {
   color: #454545;
   text-align: center;
 }
+.bordered-iframe {
+  border: 2px solid #000;
+}
 
 /* end of content
   
@@ -509,7 +512,7 @@ img {
 }
 
 .button {
-  background-color: #3f6969;
+  background-color: rgb(71, 72, 74);
   color: white;
   text-align: center;
   padding: 10px 25px;

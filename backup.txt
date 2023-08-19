@@ -1,0 +1,63 @@
+   <!-- <div id="dr.ajay_brief" style="margin-top: 1%; margin-right: 10%;">
+
+      <div style="display: flex; flex-direction: column; align-items: center; margin-right: 10px;">
+        <div style="margin-top: 1%">
+          <img src="../img/AKK sir.jpeg" alt="" height="250px" />
+        </div>
+
+        <h3 style="
+          color: black;
+          font-family: sans-serif;
+          text-align: center;
+          font-size: 18px;">
+          Prof. Ajay Kumar Kushwaha
+        </h3>
+
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 11px;
+          font-weight: 600;
+          margin-bottom: 0;
+          margin-left: 0px;">
+          M.Sc. (Physics), Ph.D. (IIT Bombay)
+        </p>
+
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 11px;
+          margin-top: 0;">
+          <b style="font-size: 14px; font-style: italic;">Associate Professor & Head</b>
+        </p>
+
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 12px;
+          margin-top: 0;">
+          Department of Metallurgical Engineering and Materials Science.
+        </p>
+
+        <p style="
+          color: black;
+          text-align: center;
+          font-family: sans-serif;
+          font-size: 12px;
+          margin-top: 0;">
+          <b style="font-style: italic;">Faculty, &nbsp</b>
+          Center for Advanced Electronics
+        </p>
+
+        <p
+          style="
+          color: rgb(39, 167, 227);
+          font-size: 14px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+          <br>Phone No.: +91-731-660-3250 (Office), 5111 (Lab) <br>Email: akk@iiti.ac.in
+        </p>
+      </div>
+    </div>

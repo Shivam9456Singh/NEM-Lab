@@ -171,7 +171,8 @@ img {
   clear: both;
   float: inline-end;
   height: 35px;
-  padding: 15px 0 0 20px;
+  padding: auto;
+  padding-top: 8px;
   font-size: 18px;
   color: #ffffff;
   background: #111111 repeat-x;

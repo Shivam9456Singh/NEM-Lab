@@ -468,11 +468,11 @@ img {
 }
 
 #templatemo_footer {
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 30px 30px;
+  padding: 20px 30px;
   margin: 0 auto;
 }
 

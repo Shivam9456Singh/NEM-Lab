@@ -528,7 +528,7 @@ img {
 
 #column_w1000 {
   float: left;
-  width: 1000px;
+  width: 100%;
   line-height: 20px;
   background: #ffffff;
 }

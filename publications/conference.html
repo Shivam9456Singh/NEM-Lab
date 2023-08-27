@@ -232,5 +232,11 @@
     </div>
 
     <hr />
+
+    <script type="text/javascript">
+      window.onload = function () {
+        parent.postMessage(document.documentElement.scrollHeight, "*");
+      };
+    </script>
   </body>
 </html>

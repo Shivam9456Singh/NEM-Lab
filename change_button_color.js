@@ -11,7 +11,22 @@ function changeButtonColor(clickedButton) {
   clickedButton.style.backgroundColor = "rgba(3, 75, 22, 0.845)";
 }
 
-function resizeIframe(obj) {
-  obj.style.height =
-    obj.contentWindow.document.documentElement.scrollHeight + "px";
+function loadIframeContent(url) {
+  var iframe = document.getElementsByName("iframe1")[0];
+  if (iframe) {
+    iframe.src = ""; // Clear the iframe
+    setTimeout(function () {
+      iframe.src = url; // Set the desired URL after a brief delay
+    }, 10);
+  }
+}
+
+function resizeIframe() {
+  var iframe = document.getElementsByName("iframe1")[0];
+  iframe.style.height = "0px"; // Reset the iframe height
+
+  setTimeout(function () {
+    iframe.style.height =
+      iframe.contentDocument.documentElement.scrollHeight + "px";
+  }, 10); // Delay to allow content to render
 }

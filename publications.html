@@ -122,12 +122,26 @@
       <div id="templatemo_content_wrapper">
         <div id="column_w1000">
           <div id="content_buttons">
-            <a href="../publications/journal.html" target="iframe1">
+              
+            <button class="button" id="button1" onclick="loadIframeContent('../publications/journal.html'); changeButtonColor(this)">
+              Journals
+            </button>
+            <button class="button" id="button1" onclick="loadIframeContent('../publications/books.html'); changeButtonColor(this)">
+            Book Chapters/Books
+            </button>
+            <button class="button" id="button1" onclick="loadIframeContent('../publications/patents.html'); changeButtonColor(this)">
+              Patents
+            </button>
+            <button class="button" id="button1" onclick="loadIframeContent('../publications/conference.html'); changeButtonColor(this)">
+            Conference Proceedings
+            </button>
+            
+            <!-- <a href="../publications/journal.html" target="iframe1">
               <button class="button" id="button1" onclick="changeButtonColor(this)">
                 Journals
               </button>
-            </a>
-            <a href="../publications/books.html" target="iframe1">
+            </a> -->
+            <!-- <a href="../publications/books.html" target="iframe1">
               <button class="button" id="button2" onclick="changeButtonColor(this)">
                 Book Chapters/Books
               </button>
@@ -141,7 +155,7 @@
               <button class="button" id="button3" onclick="changeButtonColor(this)">
                 Conference Proceedings
               </button>
-            </a>
+            </a> -->
           </div>
           <br /><br />
           <iframe class="bordered-iframe" 
@@ -204,6 +218,16 @@
   </div>
 
   <!-- end of footer -->
+ 
+
+<script type="text/javascript">
+  window.addEventListener('message', function(event) {
+      var iframe = document.getElementsByName('iframe1')[0];
+      if (iframe) {
+          iframe.style.height = event.data + 'px';
+      }
+  }, false);
+</script>
 
 </body>
 

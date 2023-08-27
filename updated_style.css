@@ -224,6 +224,18 @@ img {
   z-index: 1000; /* High z-index to ensure it stays above other content */
 }
 
+/* button hover */
+.button:hover {
+  background-color: rgba(3, 75, 22, 0.845);
+}
+.button:active,
+.button:focus {
+  background-color: rgba(3, 75, 22, 0.845);
+}
+.button.active {
+  background-color: rgba(3, 75, 22, 0.845);
+}
+
 #templatemo_header {
   width: 1150px;
   margin: 0 auto;

@@ -218,6 +218,11 @@ img {
   width: 100%;
   z-index: 1000;
 } */
+#templatemo_header_wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* High z-index to ensure it stays above other content */
+}
 
 #templatemo_header {
   width: 1150px;

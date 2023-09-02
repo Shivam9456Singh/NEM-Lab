@@ -225,7 +225,7 @@ img {
 }
 
 /* button hover */
-.button:hover {
+/* .button:hover {
   background-color: rgba(3, 75, 22, 0.845);
 }
 .button:active,
@@ -234,7 +234,7 @@ img {
 }
 .button.active {
   background-color: rgba(3, 75, 22, 0.845);
-}
+} */
 
 #templatemo_header {
   width: 1150px;
@@ -541,6 +541,23 @@ img {
   border: none;
   cursor: pointer;
   border-radius: 12px;
+}
+.button {
+  background-color: rgba(11, 156, 47, 0.845); /* Default color */
+  /* ... other styles for the button ... */
+}
+
+.button:hover {
+  background-color: rgba(7, 115, 35, 0.845); /* Hover color */
+}
+
+.button.active {
+  background-color: rgba(
+    3,
+    75,
+    22,
+    0.845
+  ); /* Active color for clicked button */
 }
 
 #column_w1000 {

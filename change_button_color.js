@@ -11,14 +11,14 @@ function changeButtonColor(clickedButton) {
   clickedButton.style.backgroundColor = "rgba(3, 75, 22, 0.845)";
 }
 
-function changeButtonColor(button) {
-  // ... other logic ...
+// function changeButtonColor(button) {
+//   // ... other logic ...
 
-  // Add an 'active' class to the clicked button
-  button.classList.add("active");
+//   // Add an 'active' class to the clicked button
+//   button.classList.add("active");
 
-  // ... other logic ...
-}
+//   // ... other logic ...
+// }
 
 function loadIframeContent(url) {
   var iframe = document.getElementsByName("iframe1")[0];

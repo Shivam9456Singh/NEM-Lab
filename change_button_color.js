@@ -32,7 +32,7 @@ function loadIframeContent(url) {
 
 function resizeIframe() {
   var iframe = document.getElementsByName("iframe1")[0];
-  iframe.style.height = "0px"; // Reset the iframe height
+  iframe.style.height = "184px"; // Reset the iframe height
 
   setTimeout(function () {
     iframe.style.height =

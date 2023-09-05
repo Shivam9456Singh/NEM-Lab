@@ -37,5 +37,5 @@ function resizeIframe() {
   setTimeout(function () {
     iframe.style.height =
       iframe.contentDocument.documentElement.scrollHeight + "px";
-  }, 10); // Delay to allow content to render
+  }, 50); // Delay to allow content to render
 }

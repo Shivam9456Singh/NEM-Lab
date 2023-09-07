@@ -26,7 +26,7 @@ function loadIframeContent(url) {
     iframe.src = ""; // Clear the iframe
     setTimeout(function () {
       iframe.src = url; // Set the desired URL after a brief delay
-    }, 10);
+    }, 50);
   }
 }
 
@@ -37,5 +37,5 @@ function resizeIframe() {
   setTimeout(function () {
     iframe.style.height =
       iframe.contentDocument.documentElement.scrollHeight + "px";
-  }, 50); // Delay to allow content to render
+  }, 10); // Delay to allow content to render
 }

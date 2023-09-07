@@ -1,65 +1,7 @@
-// function showModal(imgElement) {
-//   let modal = document.getElementById("imageModal");
-//   let enlargedImg = document.getElementById("enlargedImage");
-//   enlargedImg.src = imgElement.src;
-//   modal.style.display = "block";
-// }
-
-// function closeModal() {
-//   let modal = document.getElementById("imageModal");
-//   modal.style.display = "none";
-// }
-
-// update 1
-// function showModal(imgElement) {
-//   let modal = document.getElementById("imageModal");
-//   let enlargedImg = document.getElementById("enlargedImage");
-
-//   // Update the modal's position to be relative to the clicked image
-//   modal.style.left = imgElement.offsetLeft + "px";
-//   modal.style.top = imgElement.offsetTop + "px";
-
-//   // Set the enlarged image's source to the clicked image's source
-//   enlargedImg.src = imgElement.src;
-
-//   // Display the modal
-//   modal.style.display = "block";
-// }
-
-// function closeModal() {
-//   let modal = document.getElementById("imageModal");
-//   modal.style.display = "none";
-// }
-
-// update2
-// function showModal(imgElement) {
-//   let modal = document.getElementById("imageModal");
-//   let enlargedImg = document.getElementById("enlargedImage");
-
-//   // Set the enlarged image's source to the clicked image's source
-//   enlargedImg.src = imgElement.src;
-
-//   // Calculate the vertical center of the row
-//   let rowCenterY = imgElement.offsetTop + imgElement.offsetHeight / 2;
-
-//   // Adjust the modal's position
-//   modal.style.left = "50%"; // Center horizontally
-//   modal.style.transform = "translateX(-50%)"; // Adjust for modal's width
-//   modal.style.top = rowCenterY - modal.offsetHeight / 2 + "px"; // Center in the row
-
-//   // Display the modal
-//   modal.style.display = "block";
-// }
-
-// function closeModal() {
-//   let modal = document.getElementById("imageModal");
-//   modal.style.display = "none";
-// }
-
-// update 3
 function showModal(imgElement) {
   let modal = document.getElementById("imageModal");
   let enlargedImg = document.getElementById("enlargedImage");
+  let windowHeight = window.innerHeight;
 
   // Set the enlarged image's source to the clicked image's source
   enlargedImg.src = imgElement.src;
@@ -70,25 +12,21 @@ function showModal(imgElement) {
   // Adjust the modal's position
   modal.style.left = "50%"; // Center horizontally
   modal.style.transform = "translateX(-50%)"; // Adjust for modal's width
-  modal.style.top = rowCenterY - modal.offsetHeight / 2 + "px"; // Center in the row
+
+  if (imgElement.offsetTop < windowHeight / 3) {
+    // If the image is in the top third of the viewport
+    modal.style.top = "80px"; // Display just below the header
+  } else if (imgElement.offsetTop > (2 * windowHeight) / 3) {
+    // If the image is in the bottom third of the viewport
+    modal.style.top = windowHeight - modal.offsetHeight + "px"; // Align with the bottom of the viewport
+  } else {
+    modal.style.top = rowCenterY - modal.offsetHeight / 2 + "px"; // Center in the row
+  }
 
   // Display the modal
   modal.style.display = "block";
 }
-
 function closeModal() {
   let modal = document.getElementById("imageModal");
   modal.style.display = "none";
-}
-
-function enlargeImage(imgElement) {
-  let overlay = document.querySelector(".enlarged-overlay");
-  let enlargedImg = document.querySelector(".enlarged-image");
-  enlargedImg.src = imgElement.src;
-  overlay.style.display = "flex";
-}
-
-function closeImage() {
-  let overlay = document.querySelector(".enlarged-overlay");
-  overlay.style.display = "none";
 }

@@ -32,10 +32,30 @@ function loadIframeContent(url) {
 
 function resizeIframe() {
   var iframe = document.getElementsByName("iframe1")[0];
-  iframe.style.height = "184px"; // Reset the iframe height
+  iframe.style.height = "280px"; // Reset the iframe height
 
   setTimeout(function () {
     iframe.style.height =
       iframe.contentDocument.documentElement.scrollHeight + "px";
   }, 10); // Delay to allow content to render
 }
+
+// back to top
+// Function to show/hide the "Back to Top" button based on scroll position
+window.addEventListener("scroll", function () {
+  var backToTopButton = document.getElementById("backToTop");
+  if (window.scrollY > 300) {
+    // Show button after scrolling down 300px
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+});
+
+// Add smooth scrolling effect when "Back to Top" button is clicked
+document
+  .getElementById("backToTop")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  });

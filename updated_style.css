@@ -149,10 +149,11 @@ img {
   padding-bottom: 1%;
   margin-bottom: 1%;
   margin-left: 0%;
-  font-size: 45px;
+
   font-weight: 700;
   line-height: 30px;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: black;
   margin-left: 5px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -208,7 +209,7 @@ img {
   width: 100%;
   height: 60px;
   margin: 0 auto;
-  background: rgba(243, 83, 3, 0.889);
+  background: #0064bc;
 }
 
 /* #templatemo_header_wrapper {
@@ -312,16 +313,18 @@ img {
 /* end of header */
 
 #templatemo_banner_wrapper {
-  background: linear-gradient(
+  /* background: linear-gradient(
       rgba(121, 168, 200, 0.6),
       rgba(115, 115, 115, 0.6)
     ),
-    url("../img/background.jpg");
+    url("../img/background.jpg"); */
+  /* background-color: #57b3eb; */
+  background-color: #b9e2f5;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 250px;
+  height: 180px;
   margin: auto;
 }
 
@@ -530,7 +533,7 @@ img {
 }
 
 .button {
-  background-color: rgba(11, 156, 47, 0.845);
+  background-color: #0064bc;
   color: white;
   text-align: center;
   padding: 10px 25px;
@@ -543,7 +546,7 @@ img {
   border-radius: 12px;
 }
 .button {
-  background-color: rgba(11, 156, 47, 0.845); /* Default color */
+  background-color: #0064bc; /* Default color */
   /* ... other styles for the button ... */
 }
 

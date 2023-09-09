@@ -484,7 +484,7 @@ img {
 #templatemo_footer_wrapper {
   width: 100%;
   margin: 0 auto;
-  background: #727777;
+  /* background: #727777; */
 }
 
 #templatemo_footer {
@@ -544,23 +544,23 @@ img {
   border: none;
   cursor: pointer;
   border-radius: 12px;
+  border-color: white;
 }
 .button {
   background-color: #0064bc; /* Default color */
   /* ... other styles for the button ... */
+  border-color: white;
 }
 
 .button:hover {
-  background-color: rgba(7, 115, 35, 0.845); /* Hover color */
+  background-color: #b9e2f5; /* Hover color */
+  border-color: white;
 }
 
 .button.active {
-  background-color: rgba(
-    3,
-    75,
-    22,
-    0.845
-  ); /* Active color for clicked button */
+  background-color: #b9e2f5;
+  color: black; /* Active color for clicked button */
+  border-color: white;
 }
 
 #column_w1000 {
@@ -588,10 +588,12 @@ img {
   margin-top: 20px;
 }
 #content_buttons .button:hover {
-  background-color: rgba(3, 75, 22, 0.845);
+  background-color: #b9e2f5;
+  color: black;
 }
 #content_buttons .button:focus {
-  background-color: rgba(3, 75, 22, 0.845);
+  background-color: #b9e2f5;
+  color: black;
 }
 
 .em_text {

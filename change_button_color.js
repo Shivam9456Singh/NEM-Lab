@@ -4,11 +4,11 @@ function changeButtonColor(clickedButton) {
 
   // Reset color for all buttons
   for (var i = 0; i < buttons.length; i++) {
-    buttons[i].style.backgroundColor = "rgba(11, 156, 47, 0.845)"; // Default color
+    buttons[i].style.backgroundColor = "#0064bc"; // Default color
   }
 
   // Set color for clicked button
-  clickedButton.style.backgroundColor = "rgba(3, 75, 22, 0.845)";
+  clickedButton.style.backgroundColor = "#b9e2f5";
 }
 
 // function changeButtonColor(button) {

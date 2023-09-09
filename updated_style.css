@@ -147,7 +147,7 @@ img {
 .header_01 {
   clear: both;
   padding-bottom: 1%;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   margin-left: 0%;
 
   font-weight: 700;
@@ -157,68 +157,27 @@ img {
   margin-left: 5px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 .header_02 {
   clear: both;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
-  font-size: 22px;
-  letter-spacing: 2px;
-  color: #000000;
-  background: left bottom no-repeat;
-}
-
-.header_03 {
-  clear: both;
-  float: inline-end;
-  height: 35px;
-  padding: auto;
-  padding-top: 8px;
-  font-size: 18px;
-  color: #ffffff;
-  background: #111111 repeat-x;
-}
-
-.header_04 {
-  clear: both;
-  font-size: 14px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.header_04 a {
-  clear: both;
-  font-size: 12px;
-  font-weight: bold;
-  color: #000000;
-  text-decoration: none;
-}
-
-.header_05 {
-  clear: both;
-  font-size: 14px;
-  color: #ffffff;
-  width: 128px;
-  height: 24px;
-  padding: 3px 0 0 20px;
-  margin-bottom: 5px;
-  background: no-repeat;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+  margin-left: 0%;
+  font-weight: 100;
+  font-weight: 100;
+  line-height: 30px;
+  /* color: #ffffff; */
+  color: black;
+  margin-left: 5px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #templatemo_header_wrapper {
   width: 100%;
   height: 60px;
   margin: 0 auto;
-  background: #0064bc;
+  background: rgba(0, 100, 188, 0.7);
 }
 
-/* #templatemo_header_wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-} */
 #templatemo_header_wrapper {
   position: sticky;
   top: 0;
@@ -544,23 +503,19 @@ img {
   border: none;
   cursor: pointer;
   border-radius: 12px;
-  border-color: white;
 }
 .button {
   background-color: #0064bc; /* Default color */
   /* ... other styles for the button ... */
-  border-color: white;
 }
 
 .button:hover {
   background-color: #b9e2f5; /* Hover color */
-  border-color: white;
 }
 
 .button.active {
   background-color: #b9e2f5;
   color: black; /* Active color for clicked button */
-  border-color: white;
 }
 
 #column_w1000 {

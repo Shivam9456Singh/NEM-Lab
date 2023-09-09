@@ -17,23 +17,41 @@
     * {
       font-family: "Roboto", sans-serif;
     }
+    .text-with-line {
+      position: relative;
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .text-with-line::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      right: 0; /* This ensures the line extends to the end of the page */
+      height: 1px; /* Adjust this value for the desired line thickness */
+      background-color: black; /* Adjust this value for the desired line color */
+      margin-left: 10px; /* Space between the text and the line */
+    }
   </style>
 
   <body>
-    <div
-      style="
-        background-color: #58d84f93;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-      "
-    >
-      <h3 style="text-align: center; font-weight: 700">
+    <div class="text-with-line">
+      <h4 style="font-weight: bolder; color: rgb(28, 81, 127)">
         Professional Experiences
-      </h3>
+      </h4>
     </div>
+
+    <hr
+      style="
+        width: 100%;
+        height: 2px;
+        border-width: 0;
+
+        color: gray;
+        background-color: rgb(78, 131, 201);
+      "
+    />
 
     <div
       class="d-flex position-relative align-items-center"
@@ -82,7 +100,7 @@
       </ul>
     </div>
 
-    <div
+    <!-- <div
       style="
         background-color: #58d84f93;
         padding: 10px;
@@ -94,8 +112,25 @@
     >
       <h3 style="text-align: center; font-weight: 700">
         Administrative Experiences
-      </h3>
+      </h3> -->
+    <!-- <h4 style="font-weight: 600"><u>Administrative Experiences</u></h4> -->
+    <!-- </div> -->
+    <div class="text-with-line">
+      <h4 style="font-weight: bolder; color: rgb(28, 81, 127)">
+        Administrative Experiences
+      </h4>
     </div>
+
+    <hr
+      style="
+        width: 100%;
+        height: 2px;
+        border-width: 0;
+
+        color: gray;
+        background-color: rgb(78, 131, 201);
+      "
+    />
 
     <div
       class="d-flex position-relative align-items-center"
@@ -135,7 +170,7 @@
         </h5>
       </ul>
     </div>
-    <div
+    <!-- <div
       style="
         background-color: #58d84f93;
         padding: 10px;
@@ -148,7 +183,27 @@
       <h3 style="text-align: center; font-weight: 700">
         Responsibilities/Services at IIT Indore: <br />
       </h3>
+    </div> -->
+    <!-- <h4 style="font-weight: 600">
+      <u>Responsibilities/Services at IIT Indore:</u>
+    </h4> -->
+    <div class="text-with-line">
+      <h4 style="font-weight: bolder; color: rgb(28, 81, 127)">
+        Responsibilities/Services at IIT Indore:
+      </h4>
     </div>
+
+    <hr
+      style="
+        width: 100%;
+        height: 2px;
+        border-width: 0;
+
+        color: gray;
+        background-color: rgb(78, 131, 201);
+      "
+    />
+
     <h4 style="text-align: center; margin-top: 10px; font-weight: 700">
       Institute Level:
     </h4>
@@ -233,7 +288,6 @@
         </h5>
       </ul>
     </div>
-    <hr />
 
     <!-- department level -->
     <h4 style="text-align: center; margin-top: 10px; font-weight: 700">

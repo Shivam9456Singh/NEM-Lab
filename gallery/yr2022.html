@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery 2023</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="gallery">
-      <!-- img 1 -->
-      <div class="img-container">
-        <img
-          src="../img/gallery/group8.jpg"
-          alt="Description of Image 1"
-          onclick="showModal(this)"
-        />
-        <p>Description of Image 1</p>
-      </div>
-      <div class="img-container">
-        <img
-          src="../img/gallery/group7.jpg"
-          alt="Description of Image 1"
-          onclick="showModal(this)"
-        />
-        <p>Description of Image 1</p>
-      </div>
-      <div class="img-container">
-        <img
-          src="../img/gallery/group6.jpg"
-          alt="Description of Image 1"
-          onclick="showModal(this)"
-        />
-        <p>Description of Image 1</p>
-      </div>
 
-      <!-- Add more images as needed -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery 2023</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="gallery">
+    <!-- img 1 -->
+    <div class="img-container">
+      <img src="img/gallery/group8.jpg" alt="Description of Image 1" onclick="showModal(this)" />
+      <p>Description of Image 1</p>
+    </div>
+    <div class="img-container">
+      <img src="img/gallery/group7.jpg" alt="Description of Image 1" onclick="showModal(this)" />
+      <p>Description of Image 1</p>
+    </div>
+    <div class="img-container">
+      <img src="img/gallery/group6.jpg" alt="Description of Image 1" onclick="showModal(this)" />
+      <p>Description of Image 1</p>
     </div>
 
-    <!-- Modal structure -->
-    <div id="imageModal" class="modal">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <img class="modal-content" id="enlargedImage" />
-    </div>
+    <!-- Add more images as needed -->
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Modal structure -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="enlargedImage" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

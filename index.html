@@ -77,31 +77,45 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   </style>
-    <style>
-      .blink {
-          animation: blinker 1.5s linear infinite;
-          color: red;
-          font-family: sans-serif;
+  <style>
+    .blink {
+      animation: blinker 1.5s linear infinite;
+      color: red;
+      font-family: sans-serif;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
       }
-      @keyframes blinker {
-          50% {
-              opacity: 0;
-          }
+    }
+
+    @keyframes fireEffect {
+      0% {
+        color: red;
       }
-      @keyframes fireEffect {
-  0% { color: red; }
-  25% { color: orange; }
-  50% { color: yellow; }
-  75% { color: orange; }
-  100% { color: red; }
-}
 
-.fire-effect {
-  animation: fireEffect 1s infinite;
-  text-shadow: 2px 2px 4px #000000;
-}
+      25% {
+        color: orange;
+      }
 
+      50% {
+        color: yellow;
+      }
 
+      75% {
+        color: orange;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+    .fire-effect {
+      animation: fireEffect 1s infinite;
+      text-shadow: 2px 2px 4px #000000;
+    }
   </style>
 </head>
 
@@ -131,8 +145,8 @@
       <img id="img" src="../img/iiti logo.png" alt="image" height="180" />
 
       <div id="templatemo_banner_content">
-        <div  class="header_01 fire-effect"><br><span style="font-size: 50px;">Nano & Energy Materials Lab</span></div>
-        <div class="header_02" > <span style="font-size: 30px;">Research Group of Prof. Kushwaha</span></div>
+        <div class="header_01 fire-effect"><br><span style="font-size: 50px;">Nano & Energy Materials Lab</span></div>
+        <div class="header_02"> <span>Research Group of Prof. Kushwaha</span></div>
       </div>
 
       <!-- <img id="img" src="../img/Lab-logo.png" alt="image" height="180" /> -->
@@ -154,8 +168,8 @@
               Kushwaha
               <br />
             </h5>
-           
-            
+
+
             <p class="card-text">
             <p>
             <p class="font-weight-bold" style="font-size:13px; color: #000000;">
@@ -197,7 +211,7 @@
 
           <div class="card-body"
             style="font-family: 'Roboto', sans-serif ; color:#000000; word-spacing: 1px; text-align: justify;">
-            <p 
+            <p
               style="text-align: center; font-size:18px; font-weight:700;color: red; margin-bottom: 1%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
               Welcome to our
               research group
@@ -376,10 +390,7 @@
       </div>
     </div>
   </div> <!-- end of footer -->
-  <a
-      href="#"
-      id="backToTop"
-      style="
+  <a href="#" id="backToTop" style="
         display: none;
         border-radius: 10%;
         position: fixed;
@@ -391,9 +402,7 @@
         color: white;
         text-decoration: none;
         border-radius: 4px;
-      "
-      >Top</a
-    >
+      ">Top</a>
 </body>
 
 </html>

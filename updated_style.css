@@ -163,12 +163,12 @@ img {
   margin-bottom: 2%;
   margin-left: 0%;
   font-weight: 100;
-  font-weight: 100;
   line-height: 30px;
   /* color: #ffffff; */
   color: black;
   margin-left: 5px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: large;
 }
 
 #templatemo_header_wrapper {

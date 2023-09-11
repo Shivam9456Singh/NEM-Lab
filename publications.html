@@ -71,9 +71,8 @@
     }
 
     .text-cream {
-      color: #FFFFE0"
-
-    }
+    color: #FFFFE0;
+}
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   </style>
@@ -104,11 +103,19 @@
       <img id="img" src="../img/iiti logo.png" alt="image" height="180" />
 
       <div id="templatemo_banner_content">
-        <div class="header_01"><br /><br />Nano & Energy Materials Lab</div>
-        <div class="header_01"><br /><br />नैनो एवं ऊर्जा पदार्थ प्रयोगशाला </div>
+        <div  class="header_01"><br><span style="font-size: 50px;">Nano & Energy Materials Lab</span></div>
+        <div class="header_01" > <span style="font-size: 30px;">Research Group of Prof. Kushwaha</span></div>
       </div>
 
-      <img id="img" src="../img/Lab-logo.png" alt="image" height="180" />
+      <div style="margin-right: 20px">
+        <img
+          src="img/NEM.gif"
+          alt="NEM"
+          class="rounded-gif"
+          height="150"
+          style="border-radius: 50%"
+        />
+      </div>
     </div>
     <!-- end of banner -->
   </div>
@@ -135,7 +142,7 @@
             <button class="button" id="button1" onclick="loadIframeContent('../publications/conference.html'); changeButtonColor(this)">
             Conference Proceedings
             </button>
-            <button class="button" id="button1" onclick="loadIframeContent('../publications/conference.html'); changeButtonColor(this)">
+            <button class="button" id="button1" onclick="loadIframeContent('../publications/conference_presentation.html'); changeButtonColor(this)">
               Conference Presentation
               </button>
             
@@ -179,7 +186,7 @@
   <!-- end of iframe -->
 
   <!-- footer start -->
-  <div id="templatemo_footer_wrapper" style="background-color: rgba(14, 38, 14, 0.779)">
+  <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
     <div>
       <p style="
         color: white;
@@ -189,7 +196,7 @@
         padding-top: 1%;
       ">
         204 A POD 1D, Department Of MEMS, IIT Indore, Khandwa Road, Simrol,
-        Indore-453552, INDIA <br />&nbsp contact : +91-731-660-5111 &nbsp
+        Indore-453552, INDIA <br />&nbsp; contact : +91-731-660-5111 &nbsp
         &nbsp&nbsp&nbspEmail: neml@iiti.ac.in
       </p>
     </div>
@@ -221,7 +228,25 @@
   </div>
 
   <!-- end of footer -->
- 
+ <!-- back to top button  -->
+ <a
+      href="#"
+      id="backToTop"
+      style="
+        display: none;
+        border-radius: 10%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1000;
+        padding: 10px 20px;
+        background-color: #f30909;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      "
+      >Top</a
+    >
 
 <script type="text/javascript">
   window.addEventListener('message', function(event) {
@@ -231,6 +256,7 @@
       }
   }, false);
 </script>
+
 
 </body>
 

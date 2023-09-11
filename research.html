@@ -116,13 +116,27 @@
         <img id="img" src="../img/iiti logo.png" alt="image" height="180" />
 
         <div id="templatemo_banner_content">
-          <div class="header_01"><br /><br />Nano & Energy Materials Lab</div>
           <div class="header_01">
-            <br /><br />नैनो एवं ऊर्जा पदार्थ प्रयोगशाला
+            <br /><span style="font-size: 50px"
+              >Nano & Energy Materials Lab</span
+            >
+          </div>
+          <div class="header_01">
+            <span style="font-size: 30px"
+              >Research Group of Prof. Kushwaha</span
+            >
           </div>
         </div>
 
-        <img id="img" src="../img/Lab-logo.png" alt="image" height="180" />
+        <div style="margin-right: 20px">
+          <img
+            src="img/NEM.gif"
+            alt="NEM"
+            class="rounded-gif"
+            height="150"
+            style="border-radius: 50%"
+          />
+        </div>
       </div>
       <!-- end of banner -->
     </div>
@@ -172,6 +186,15 @@
                   Colaborators
                 </button>
               </a>
+              <a href="../Research/research_gallery.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button3"
+                  onclick="changeButtonColor(this)"
+                >
+                  Research Gallery
+                </button>
+              </a>
             </div>
             <br /><br />
 
@@ -193,10 +216,7 @@
 
     <!-- footer start  -->
 
-    <div
-      id="templatemo_footer_wrapper"
-      style="background-color: rgba(14, 38, 14, 0.779)"
-    >
+    <div id="templatemo_footer_wrapper" style="background-color: #0064bc">
       <div>
         <p
           style="
@@ -247,5 +267,23 @@
     </div>
 
     <!-- footer start -->
+    <a
+      href="#"
+      id="backToTop"
+      style="
+        display: none;
+        border-radius: 10%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1000;
+        padding: 10px 20px;
+        background-color: #f30909;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      "
+      >Top</a
+    >
   </body>
 </html>

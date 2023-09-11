@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery 2023</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gallery">
+      <!-- img 1 -->
+      <div class="img-container">
+        <img
+          src="../img/gallery/5.jpg"
+          alt="Description of Image 1"
+          onclick="showModal(this)"
+        />
+        <p>Description of Image 1</p>
+      </div>
+      <div class="img-container">
+        <img
+          src="../img/gallery/2.jpg"
+          alt="Description of Image 1"
+          onclick="showModal(this)"
+        />
+        <p>Description of Image 1</p>
+      </div>
+      <div class="img-container">
+        <img
+          src="../img/gallery/9.jpg"
+          alt="Description of Image 1"
+          onclick="showModal(this)"
+        />
+        <p>Description of Image 1</p>
+      </div>
+      <div class="img-container">
+        <img
+          src="../img/gallery/8.jpg"
+          alt="Description of Image 1"
+          onclick="showModal(this)"
+        />
+        <p>Description of Image 1</p>
+      </div>
+      <div class="img-container">
+        <img
+          src="../img/gallery/1.jpg"
+          alt="Description of Image 1"
+          onclick="showModal(this)"
+        />
+        <p>Description of Image 1</p>
+      </div>
+
+      <!-- img 1 -->
+
+      <!-- img 1 -->
+
+      <!-- img 1 -->
+
+      <!-- Add more images as needed -->
+    </div>
+
+    <!-- Modal structure -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="enlargedImage" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

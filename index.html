@@ -77,6 +77,32 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   </style>
+    <style>
+      .blink {
+          animation: blinker 1.5s linear infinite;
+          color: red;
+          font-family: sans-serif;
+      }
+      @keyframes blinker {
+          50% {
+              opacity: 0;
+          }
+      }
+      @keyframes fireEffect {
+  0% { color: red; }
+  25% { color: orange; }
+  50% { color: yellow; }
+  75% { color: orange; }
+  100% { color: red; }
+}
+
+.fire-effect {
+  animation: fireEffect 1s infinite;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+  </style>
 </head>
 
 <body>
@@ -105,8 +131,8 @@
       <img id="img" src="../img/iiti logo.png" alt="image" height="180" />
 
       <div id="templatemo_banner_content">
-        <div class="header_01"><br /><br />Nano & Energy Materials Lab</div>
-        <div class="header_01"><br /><br />नैनो एवं ऊर्जा पदार्थ प्रयोगशाला </div>
+        <div  class="header_01 fire-effect"><br><span style="font-size: 50px;">Nano & Energy Materials Lab</span></div>
+        <div class="header_02" > <span style="font-size: 30px;">Research Group of Prof. Kushwaha</span></div>
       </div>
 
       <!-- <img id="img" src="../img/Lab-logo.png" alt="image" height="180" /> -->
@@ -128,6 +154,8 @@
               Kushwaha
               <br />
             </h5>
+           
+            
             <p class="card-text">
             <p>
             <p class="font-weight-bold" style="font-size:13px; color: #000000;">
@@ -169,7 +197,7 @@
 
           <div class="card-body"
             style="font-family: 'Roboto', sans-serif ; color:#000000; word-spacing: 1px; text-align: justify;">
-            <p
+            <p 
               style="text-align: center; font-size:18px; font-weight:700;color: red; margin-bottom: 1%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
               Welcome to our
               research group
@@ -280,8 +308,8 @@
 
     <section class="container mt-0 pr-0 pl-0">
       <div class="row shadow-lg p-1 mb-2 bg-white rounded ">
-        <l
-          style="margin-left: 5%; word-spacing:1px; font-family: 'Roboto', sans-serif ; padding: 0; font-size: 20px; color:#000000;font-weight: 700 ;margin-top: 1%; list-style-type:none; text-align: center; text-decoration: underline;font-family: 'Roboto', sans-serif ">
+        <l class="blink"
+          style="margin-left: 5%; word-spacing:1px; font-family: 'Roboto', sans-serif ; padding: 0; font-size: 20px;font-weight: 700 ;margin-top: 1%; list-style-type:none; text-align: center; text-decoration: underline;font-family: 'Roboto', sans-serif ">
           News:
         </l>
         <ul
@@ -320,7 +348,7 @@
 
   </section>
 
-  <div id="templatemo_footer_wrapper" style="background-color: rgba(14, 38, 14, 0.779);">
+  <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
     <div>
       <p style="color: white; font-family: sans-serif; font-size: 14px; text-align: center;padding-top: 1%;"> 204 A POD
         1D, Department
@@ -348,6 +376,24 @@
       </div>
     </div>
   </div> <!-- end of footer -->
+  <a
+      href="#"
+      id="backToTop"
+      style="
+        display: none;
+        border-radius: 10%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1000;
+        padding: 10px 20px;
+        background-color: #f30909;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      "
+      >Top</a
+    >
 </body>
 
 </html>

@@ -1,164 +1,454 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <style>
-    .card-container {
-      margin-top: 20px;
-    }
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Nano &amp; Energy Lab</title>
+    <meta
+      content="free css templates, website templates, CSS, HTML"
+      name="keywords"
+    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Simple Blue - Professional free XHTML/CSS template provided by templatemo.com"
+      name="description"
+    />
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      rel="stylesheet"
+    />
+    <link href="updated_style.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript">
+      function clearText(field) {
+        if (field.defaultValue == field.value) field.value = "";
+        else if (field.value == "") field.value = field.defaultValue;
+      }
+    </script>
+    <script src="../change_button_color_modified.js"></script>
+    <style type="text/css">
+      body {
+        font-family: arial
+      }
 
-    .card {
-      margin-bottom: 20px;
-      width: 80%;
-      /* reduce the width of the card */
-      margin-left: auto;
-      /* center the card */
-      margin-right: auto;
-      /* center the card */
-    }
+      .page-header {
+        padding-bottom: 9px;
+        margin: 20px 0 20px;
+        border-bottom: 1px solid #eeeeee;
+      }
 
-    .card-body {
-      padding: 10px;
-      /* reduce the padding inside the card */
-    }
-
-    .card-img-top {
-      height: 250px;
-      /* reduce the height of the image */
-      object-fit: cover;
-      border-radius: 3%;
-      /* make sure the image covers the space without distortion */
-    }
-
-    .card-info a {
-      text-decoration: none;
-    }
-  </style>
-  <title>members</title>
-</head>
-
-<body>
-  <!-- <div
-      style="
-        background-color: #58d84f93;
+      .hero-unit {
         padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
+        margin-bottom: 10px;
+        background-color: #eeeeee;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+      }
+
+      .hero-unit h1 {
+        margin-bottom: 0;
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1px;
+        color: inherit;
+      }
+
+      .hero-unit p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        color: inherit;
+      }
+
+      .span8 {
+        width: 620px;
+      }
+
+      .span3 {
+        width: 220px;
+      }
+
+      .bg-black {
+        /* color:#FFFFE0" */
+        background-color: #000000;
+      }
+
+      .text-cream {
+        color: #FFFFE0"
+
+      }
+
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+  </head>
+  <body>
+    <div id="templatemo_header_wrapper">
+      <!--  Free Web Templates by TemplateMo.com  -->
+      <div id="templatemo_header">
+        <div class="abc">
+          <br />
+               
+          <a href="index.html">Home</a>                
+          <a href="prof_kushwaha.html">Prof. Kushwaha</a>                
+          <a href="members.html">Members</a>                
+          <a href="research.html">Research</a>                
+          <a href="publications.html">Publications</a>               
+          <a href="gallery.html">Gallery</a>
+        </div>
+      </div>
+      <!-- end of header -->
+    </div>
+    <div id="templatemo_banner_wrapper">
+      <div id="templatemo_banner">
+        <img alt="image" height="180" id="img" src="img/iiti logo.png" />
+        <div id="templatemo_banner_content">
+          <div class="header_01">
+            <br /><span style="font-size: 50px"
+              >Nano &amp; Energy Materials Lab</span
+            >
+          </div>
+          <div class="header_02">
+            <span>Research Group of Prof. Kushwaha</span>
+          </div>
+        </div>
+        <div style="margin-right: 20px">
+          <img
+            alt="NEM"
+            class="rounded-gif"
+            height="150"
+            src="img/NEM.gif"
+            style="border-radius: 50%"
+          />
+        </div>
+      </div>
+      <!-- end of banner -->
+    </div>
+    <!-- end of banner wrapper -->
+    <!-- iframe start -->
+    <section class="container mt-0">
+      <div class="row shadow-lg p-3 mb-1 bg-white rounded">
+        <div id="templatemo_content_wrapper">
+          <!-- buttons -->
+          <div id="column_w1000">
+            <div id="content_buttons">
+              <a href="members.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button1"
+                  onclick="changeButtonColor(this)"
+                >
+                  Phd Students
+                </button>
+              </a>
+              <a href="mtech_btech.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button2"
+                  onclick="changeButtonColor(this)"
+                >
+                  M.Tech/B.Tech
+                </button>
+              </a>
+              <a href="alumni.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button3"
+                  onclick="changeButtonColor(this)"
+                >
+                  Alumni
+                </button>
+              </a>
+              <a href="visiting_researchers.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button4"
+                  onclick="changeButtonColor(this)"
+                >
+                  postdoc/visiting Researcher
+                </button>
+              </a>
+              <a href="open_positions.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button5"
+                  onclick="changeButtonColor(this)"
+                >
+                  Open Positions
+                </button>
+              </a>
+            </div>
+            <br /><br />
+
+            <!-- content body start -->
+            <style>
+              .card-container {
+                margin-top: 20px;
+              }
+
+              .card {
+                margin-bottom: 20px;
+                width: 80%;
+                /* reduce the width of the card */
+                margin-left: auto;
+                /* center the card */
+                margin-right: auto;
+                /* center the card */
+              }
+
+              .card-body {
+                padding: 10px;
+                /* reduce the padding inside the card */
+              }
+
+              .card-img-top {
+                height: 300px;
+                /* reduce the height of the image */
+                object-fit: cover;
+                border-radius: 3%;
+                /* make sure the image covers the space without distortion */
+              }
+
+              .card-info a {
+                text-decoration: none;
+              }
+            </style>
+            <body>
+              <!-- <div
+                  style="
+                    background-color: #58d84f93;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 15px;
+                  "
+                >
+                  <h3 style="text-align: center; font-weight: 700">M.Tech Students</h3>
+                </div> -->
+
+              <div class="text-with-line">
+                <h4 style="font-weight: bolder; color: rgb(28, 81, 127)">
+                  M.Tech Students
+                </h4>
+              </div>
+
+              <hr
+                style="
+                  width: 100%;
+                  height: 2px;
+                  border-width: 0;
+
+                  color: gray;
+                  background-color: rgb(78, 131, 201);
+                "
+              />
+              <!-- horizontal image and description start -->
+
+              <div class="container card-container">
+                <div class="row">
+                  <!-- m.tech detail -->
+                  <div class="col-md-4">
+                    <div class="card" style="width: 100%">
+                      <img
+                        src="img/Mtech/prosenjit.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="card-info">
+                          <p><strong>Name:</strong> Prosenjit Mondal</p>
+                          <p><strong>Year:</strong> M.Tech (June 2023)</p>
+                          <p>
+                            <strong>Topic:</strong> Electrochemicak 3d Printing
+                          </p>
+                          <a
+                            href="https://www.linkedin.com/in/prosenjitmondal98/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin fa-sm"></i> LinkedIn</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-with-line">
+                <h4 style="font-weight: bolder; color: rgb(28, 81, 127)">
+                  B.Tech Students
+                </h4>
+              </div>
+
+              <hr
+                style="
+                  width: 100%;
+                  height: 2px;
+                  border-width: 0;
+
+                  color: gray;
+                  background-color: rgb(78, 131, 201);
+                "
+              />
+
+              <br /><br />
+              <div class="container card-container">
+                <div class="row">
+                  <div class="col-md-4" style="margin-top: 2%">
+                    <div class="card" style="width: 100%">
+                      <img
+                        src="img/Btech/shivam.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="card-info">
+                          <p><strong>Name:</strong> Shivam Kumar Singh</p>
+                          <p><strong>Year:</strong> 2023</p>
+                          <p><strong>Topic:</strong> BTP</p>
+                          <a
+                            href="https://www.linkedin.com/in/shivam-singh-a19a32214/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin fa-sm"></i> LinkedIn</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- You can repeat the above card block for other cards as needed -->
+                  <!-- Card 1 -->
+                  <div class="col-md-4" style="margin-top: 2%">
+                    <div class="card" style="width: 100%">
+                      <img
+                        src="img/Btech/shreya.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="card-info">
+                          <p><strong>Name:</strong> Shreya Singh</p>
+                          <p><strong>Year:</strong> 2023</p>
+                          <p><strong>Topic:</strong> BTP</p>
+                          <a
+                            href="https://www.linkedin.com/in/shreya-singh-b25079200/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin fa-sm"></i> LinkedIn</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- You can repeat the above card block for other cards as needed -->
+                  <!-- Card 1 -->
+                  <div class="col-md-4" style="margin-top: 2%">
+                    <div class="card" style="width: 100%">
+                      <img
+                        src="img/Btech/nikhil.jpg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <div class="card-info">
+                          <p><strong>Name:</strong> Nikhil Kumar</p>
+                          <p><strong>Year:</strong> 2023</p>
+                          <p><strong>Topic:</strong> BTP</p>
+                          <a
+                            href="https://www.linkedin.com/in/nikhil-kumar-287b18205/"
+                            target="_blank"
+                            ><i class="fab fa-linkedin fa-sm"></i> LinkedIn</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- You can repeat the above card block for other cards as needed -->
+                </div>
+              </div>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+            s
+            <!-- content body ends -->
+            <!-- </html> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer start  -->
+    <div id="templatemo_footer_wrapper" style="background-color: #0064bc">
+      <div>
+        <p
+          style="
+            color: white;
+            font-family: sans-serif;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 1%;
+          "
+        >
+          204 A POD 1D, Department Of MEMS, IIT Indore, Khandwa Road, Simrol,
+          Indore-453552, INDIA <br />  contact : +91-731-660-5111  
+            &amp;nbspEmail: neml@iiti.ac.in
+        </p>
+      </div>
+      <div id="templatemo_footer">
+        <p
+          style="
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            font-size: 14px;
+            margin-right: 20px;
+            margin-left: 0;
+          "
+        >
+          Copyright © 2023 NEM Lab IIT INDORE
+        </p>
+        <div>
+          <p
+            style="
+              color: rgb(255, 255, 255);
+              font-family: sans-serif;
+              font-size: 14px;
+              margin: 0;
+            "
+          >
+            Developers : 
+            <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/">
+              Shivam Singh</a
+            >
+            &amp;
+            <a href="https://www.linkedin.com/in/prosenjitmondal98/"
+              >Prosenjit Mondal</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer end -->
+    <a
+      href="#"
+      id="backToTop"
+      style="
+        display: none;
+        border-radius: 10%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1000;
+        padding: 10px 20px;
+        background-color: #f30909;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
       "
+      >Top</a
     >
-      <h3 style="text-align: center; font-weight: 700">M.Tech Students</h3>
-    </div> -->
-
-  <div class="text-with-line">
-    <h4 style="font-weight: bolder; color: rgb(28, 81, 127)">
-      M.Tech Students
-    </h4>
-  </div>
-
-  <hr style="
-        width: 100%;
-        height: 2px;
-        border-width: 0;
-
-        color: gray;
-        background-color: rgb(78, 131, 201);
-      " />
-  <!-- horizontal image and description start -->
-
-  <div class="container card-container">
-    <div class="row">
-      <!-- m.tech detail -->
-      <div class="col-md-4">
-        <div class="card" style="width: 100%">
-          <img src="img/Mtech/prosenjit.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <div class="card-info">
-              <p><strong>Name:</strong> Prosenjit Mondal</p>
-              <p><strong>Year:</strong> M.Tech (June 2023)</p>
-              <p><strong>Topic:</strong> Electrochemicak 3d Printing</p>
-              <a href="https://www.linkedin.com/in/prosenjitmondal98/" target="_blank"><i
-                  class="fab fa-linkedin fa-sm"></i> LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="text-with-line">
-    <h4 style="font-weight: bolder; color: rgb(28, 81, 127)">
-      B.Tech Students
-    </h4>
-  </div>
-
-  <hr style="
-        width: 100%;
-        height: 2px;
-        border-width: 0;
-
-        color: gray;
-        background-color: rgb(78, 131, 201);
-      " />
-
-  <br /><br />
-  <div class="container card-container">
-    <div class="row">
-      <div class="col-md-4" style="margin-top: 2%">
-        <div class="card" style="width: 100%">
-          <img src="img/Btech/shivam.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <div class="card-info">
-              <p><strong>Name:</strong> Shivam Kumar Singh</p>
-              <p><strong>Year:</strong> 2023</p>
-              <p><strong>Topic:</strong> BTP</p>
-              <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" target="_blank"><i
-                  class="fab fa-linkedin fa-sm"></i> LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- You can repeat the above card block for other cards as needed -->
-      <!-- Card 1 -->
-      <div class="col-md-4" style="margin-top: 2%">
-        <div class="card" style="width: 100%">
-          <img src="img/Btech/shreya.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <div class="card-info">
-              <p><strong>Name:</strong> Shreya Singh</p>
-              <p><strong>Year:</strong> 2023</p>
-              <p><strong>Topic:</strong> BTP</p>
-              <a href="https://www.linkedin.com/in/shreya-singh-b25079200/" target="_blank"><i
-                  class="fab fa-linkedin fa-sm"></i> LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- You can repeat the above card block for other cards as needed -->
-      <!-- Card 1 -->
-      <div class="col-md-4" style="margin-top: 2%">
-        <div class="card" style="width: 100%">
-          <img src="img/Btech/nikhil.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <div class="card-info">
-              <p><strong>Name:</strong> Nikhil Kumar</p>
-              <p><strong>Year:</strong> 2023</p>
-              <p><strong>Topic:</strong> BTP</p>
-              <a href="https://www.linkedin.com/in/nikhil-kumar-287b18205/" target="_blank"><i
-                  class="fab fa-linkedin fa-sm"></i> LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- You can repeat the above card block for other cards as needed -->
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>

@@ -15,16 +15,19 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="updated_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <script language="javascript" type="text/javascript">
     function clearText(field) {
       if (field.defaultValue == field.value) field.value = "";
       else if (field.value == "") field.value = field.defaultValue;
     }
   </script>
-  
+
   <style type="text/css">
     body {
-      font-family: arial
+      font-family: "Quicksand", sans-serif;
     }
 
     .page-header {
@@ -75,9 +78,15 @@
 
     }
 
+    .custom-container {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 96%;
+      /* 100% - 2% left margin - 2% right margin */
+    }
+
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  </style>
-  <style>
+
     .blink {
       animation: blinker 1.5s linear infinite;
       color: red;
@@ -90,58 +99,151 @@
       }
     }
 
-    
-    
+    * {
+      box-sizing: border-box;
+    }
+
+    ul {
+      list-style-type: none;
+      text-align: justify;
+      color: black;
+      font-family: sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      /* Add 'px' unit */
+      /* Remove bullet points */
+      padding: 10px;
+      list-style-type: none;
+      /* Remove the disc style */
+      /* Add some padding for aesthetics */
+    }
+
+    /* Add custom bullet point style */
+    ul::before {
+      content: '\2022';
+      /* Unicode bullet point character */
+      color: rgb(0, 0, 0);
+      /* Match the header background color */
+      font-weight: bold;
+      /* Make the bullet point bold */
+      display: inline-block;
+      width: 1em;
+      /* Adjust the space between bullet and content */
+      margin-left: -1em;
+      /* To align the content properly */
+    }
+
+    .rounded-gif {
+      border-radius: 50%;
+      /* This will give the image rounded corners */
+      width: 150px;
+      /* Adjust this value to make the image smaller or larger */
+      height: 150px;
+      /* Adjust this value to make the image smaller or larger */
+      margin-right: 20px;
+      margin-left: 0px;
+
+      /* This will give some space between the image and the text */
+    }
+
+    .slideshow-container {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      overflow: hidden;
+
+
+      /* Hide images that are out of view */
+    }
+
+    .mySlides {
+      display: none;
+      position: relative;
+      width: 100%;
+      left: 100%;
+      /* Start from the right outside of view */
+    }
+
+    .mySlides img {
+      max-width: 100%;
+      /* Ensures the image doesn't exceed the width of the container */
+      max-height: 100%;
+      /* For example, set it to desired height */
+      display: block;
+      /* To remove any unwanted white space */
+      margin: auto;
+      /* To center the image within its container */
+      padding: 5%;
+      /* Adjust as needed */
+    }
+
+
+    @keyframes slideInOut {
+      0% {
+        left: 100%;
+        /* Start from the right side */
+      }
+
+      20%,
+      80% {
+        left: 0;
+        /* Slide to the left and stay for a while */
+      }
+
+      100% {
+        left: -20%;
+        /* Slide out to the left */
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div id="templatemo_header_wrapper">
-    <!--  Free Web Templates by TemplateMo.com  -->
-    <div id="templatemo_header">
-      <div class="abc">
-        <br />
-        &nbsp &nbsp &nbsp
-        <a style="color: black;" href="index.html">Home</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp <a href="prof_kushwaha.html">Prof. Kushwaha</a> &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="members.html">Members</a> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp <a href="research.html">Research</a> &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="publications.html">Publications</a>&nbsp &nbsp &nbsp &nbsp
-        &nbsp &nbsp &nbsp &nbsp
-        <a href="gallery.html">Gallery</a>
-      </div>
-    </div>
-    <!-- end of header -->
-  </div>
-
   <div id="templatemo_banner_wrapper">
     <div id="templatemo_banner">
-      <img id="img" src="img/iiti logo.png" alt="image" height="180" style="filter:brightness(1)" />
+      <img id="img" src="img/iiti logo.png" alt="image" height="70" style="filter:brightness(1); margin-top: 0;" />
 
       <div id="templatemo_banner_content">
-        <div class="header_01"><br><span style="font-size: 50px;">Nano & Energy Materials Lab</span></div>
-        <div class="header_02"> <span>Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp; 
-        </span></div>
-        
+        <div class="header_01"><br><span style="font-size: 32px;">Nano & Energy Materials Lab</span></div>
+        <div class="header_02"> <span>Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
+          </span></div>
+
+      </div>
+      <div id="templatemo_header_wrapper">
+        <!--  Free Web Templates by TemplateMo.com  -->
+        <div id="templatemo_header">
+          <div class="abc">
+            <br />
+            <a style="color: rgb(255, 238, 87);" href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="prof_kushwaha.html">Prof. Kushwaha</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="members.html">Members</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="research.html">Research</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="publications.html">Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </div>
+        <!-- end of header -->
       </div>
 
       <!-- <img id="img" src="img/Lab-logo.png" alt="image" height="180" /> -->
-      <img src="img/NEM.gif" alt="NEM" class="rounded-gif">
-      
+
     </div>
     <!-- end of banner -->
   </div>
+  <hr
+    style="margin-top:0px; margin-left:0px;border: none; background-color: rgba(0, 100, 188, 0.8); width: 100%; height: 8px;">
+
+
   <!-- end of banner wrapper -->
 
-  <section class="container mt-0 pr-0 pl-0">
-    <div class="row shadow-lg p-3 mb-1 bg-white rounded">
+
+  <section class="custom-container mt-0 pr-0 pl-0">
+    <div class="row  p-3 mb-1 bg-white rounded">
       <div class="col-sm-5">
         <div class="card" style="align-content: center; justify-content: center;">
           <img src="img/AKK sir.jpeg" class="card-img-top" alt="..."
-            style="height: 300px; width:300px; padding-left: 5%; padding-right: 1%; padding-top: 4%;">
-          <div class="card-body " style="text-align:justify" style="font-family:'Roboto','sans-serif'">
+            style="height: 300px; width:300px; padding-left: 5%; padding-right: 0; padding-top: 4%;">
+          <div class="card-body " style="text-align:justify" style="font-family: 'Quicksand', sans-serif;">
             <h5 class=" card-title font-weight-bold" style="color: #000000; ">
               Prof. Ajay Kumar
               Kushwaha
@@ -151,20 +253,25 @@
 
             <p class="card-text">
             <p>
-            <p class="font-weight-bold" style="font-size:13px; color: #000000;">
+            <p class="font-weight-bold"
+              style="font-size:16px; color: #000000; font-family: 'Quicksand',sans-serif; font-weight: 900; ">
               Associate Professor & HoD,</br></p>
-            <span style="font-size: 12px; text-align: justify; font-weight:5px;color: #000000;">Department of
+            <span style="font-size: 12px; text-align: justify; font-weight:5px;color: #000000;">Department
+              of
               Metallurgical Engineering
               &
               Materials Science (MEMS)</span><br>
             &
             </p>
-            <span class="font-weight-bold" style="font-style:italic;"> Faculty</span>, Center for Advanced
+            <span class="font-weight-bold" style="font-style:italic;">
+              Faculty</span>, Center for Advanced
             Electronics (CAE)<br>
-            <span class=" font-weight-bold" style="font-style:italic;"> Faculty</span>, Center of Futuristic
+            <span class=" font-weight-bold" style="font-style:italic;">
+              Faculty</span>, Center of Futuristic
             Defense and Space Technology
             (CFDST)<br>
-            <span class=" font-weight-bold"> Indian Institute of Technology Indore – 453552</span><br>
+            <span class=" font-weight-bold" style="font-family: 'Quicksand', sans-serif;"> Indian Institute of
+              Technology Indore – 453552</span><br>
             <span class="font-weight-bold" style="color: rgb(34, 34, 196);"> Phone:</span> +91-731-660-3250 (office)<br>
 
             <span class="font-weight-bold" style="color: rgb(47, 47, 209);"> E-mail:</span> akk@iiti.ac.in<br>
@@ -188,10 +295,9 @@
       <div class="col-sm-7 shadow-lg p-3 mb-5 bg-white rounded">
         <div class="card">
 
-          <div class="card-body"
-            style="font-family: 'Roboto', sans-serif ; color:#000000; word-spacing: 1px; text-align: justify;">
-            <p
-              style="text-align: center; font-size:18px; font-weight:700;color: red; margin-bottom: 1%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+          <div class="card-body" style="font-family: 'Quicksand', sans-serif; color:#000000; word-spacing: 1px;
+            text-align: justify;">
+            <p style="text-align: center; font-size:18px; color: red; margin-bottom: 1%">
               Welcome to our
               research group
               page!</p>
@@ -201,149 +307,98 @@
               films of metal oxides, metals, alloys & 2D materials (graphene and mxenes). The group is interested to
               understand the fundamental properties of nanoscale materials and effect of interfacial properties on
               electrochemical devices.
-              
-              
+
+
             </p>
             </p>
           </div>
 
-          
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <!-- Slideshow container -->
-        
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/group.jpeg" class="d-block w-100" alt="...">
+          <div>
+            <div class="slideshow-container">
+              <div class="mySlides">
+                <img src="img/slider/Picture1.jpg" alt="Image 1">
               </div>
-              <div class="carousel-item">
-                <img src="img/gallery/group7.jpg" class="d-block w-100" alt="...">
+              <div class="mySlides">
+                <img src="img/slider/Picture2.jpg" alt="Image 2">
               </div>
-              <div class="carousel-item">
-                <img src="img/gallery/group2.jpg" class="d-block w-100" alt="...">
+              <div class="mySlides">
+                <img src="img/slider/Picture3.jpg" alt="Image 3">
               </div>
-              <div class="carousel-item">
-                <img src="img/gallery/group8.jpg" alt="Sea Mist" class="d-block w-100">
+              <div class="mySlides">
+                <img src="img/slider/Picture5.jpg" alt="Image 4">
               </div>
-              <div class="carousel-item">
-                <img src="img/gallery/image.jpeg" alt="Sea Mist" class="d-block w-100">
+              <div class="mySlides">
+                <img src="img/slider/Picture6.jpg" alt="Image 5">
               </div>
-              <div class="carousel-item">
-                <img src="img/gallery/9.jpg" alt="Sea Mist" class="d-block w-100">
+              <div class="mySlides">
+                <img src="img/slider/Picture7.jpg" alt="Image 6">
               </div>
-              <div class="carousel-item">
-                <img src="img/gallery/9.jpg" alt="Sea Mist" class="d-block w-100">
+              <div class="mySlides">
+                <img src="img/slider/Picture9.jpg" alt="Image 7">
               </div>
+              <div class="mySlides">
+                <img src="img/slider/Picture10.jpg" alt="Image 8">
+              </div>
+              <div class="mySlides">
+                <img src="img/slider/Picture12.jpg" alt="Image 9">
+              </div>
+
+              <!-- Add more slides as needed -->
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+
+
           </div>
         </div>
-      </div>
-    </div><!--Row ends-->
+      </div><!--Row ends-->
   </section>
-  <div style="text-align: center; background-color: yellow; width: 150px; margin-left: 45%; border-radius: 7.5px; height: 30px; padding-top: 5px;">
-    <button  type="submit" style="display:contents; text-decoration: none;text-align: center;"><a style="color: black;text-decoration: none; font-size: 18px;text-align: center; font-weight: 700;" class="blink" href="open_positions.html">Open Positions</a></button>
+  <div
+    style="text-align: center; background-color: yellow; width: 150px; margin-left: 45%;margin-bottom: 4px; border-radius: 7.5px; height: 30px; padding-top: 5px;">
+    <button type="submit" style="display:contents; text-decoration: none;text-align: center;"><a
+        style="color: black;text-decoration: none; font-size: 18px;text-align: center; font-weight: 700;" class="blink"
+        href="open_positions.html">Open Positions</a></button>
   </div>
-  
-  <div>
-    <style>
-      /* Base style for all ul elements */
-      ul {
-        list-style-type: none;
-        text-align: justify;
-        color: black;
-        font-family: sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        /* Add 'px' unit */
-        /* Remove bullet points */
-        padding: 10px;
-        list-style-type: none;
-        /* Remove the disc style */
-        /* Add some padding for aesthetics */
-      }
 
-      /* Add custom bullet point style */
-      ul::before {
-        content: '\2022';
-        /* Unicode bullet point character */
-        color: rgb(0, 0, 0);
-        /* Match the header background color */
-        font-weight: bold;
-        /* Make the bullet point bold */
-        display: inline-block;
-        width: 1em;
-        /* Adjust the space between bullet and content */
-        margin-left: -1em;
-        /* To align the content properly */
-      }
+  <div style="width: 100%;">
+    <section class="container mt-0 pr-0 pl-0 mb-lg-2">
 
-      .rounded-gif {
-        border-radius: 50%;
-        /* This will give the image rounded corners */
-        width: 150px;
-        /* Adjust this value to make the image smaller or larger */
-        height: 150px;
-        /* Adjust this value to make the image smaller or larger */
-        margin-right: 20px;
-        margin-left: 0px;
-
-        /* This will give some space between the image and the text */
-      }
-    </style>
-
-    <section class="container mt-0 pr-0 pl-0">
-      <div class="row shadow-lg p-1 mb-2 bg-white rounded ">
+      <div class="row shadow-lg p-0 mb-1 bg-white rounded ">
         <l class="blink"
-          style="margin-left: 5%; word-spacing:1px; font-family: 'Roboto', sans-serif ; padding: 0; font-size: 20px;font-weight: 700 ;margin-top: 2%; list-style-type:none; text-align: center; text-decoration: underline;font-family: 'Roboto', sans-serif ">
+          style="margin-left: 5%; word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 1%; font-size: 20px;font-weight: 700 ;margin-top: 2%; list-style-type:none; text-align: center; text-decoration: underline;font-family: 'Roboto', sans-serif ">
           NEWS:
         </l>
         <ul
-          style="margin-left: 5%; margin-right: 5%; word-spacing:1px; font-family: 'Roboto', sans-serif ; padding: 0; font-size: 15px; margin-top: 1%; ">
+          style="margin-left: 5%; margin-right: 5%; word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 0; font-size: 15px; margin-top: 1%; ">
+          Welcome Dr. Paul (University Nangui Abrogoua Abidjan, Cote D'Ivoire) as
+          Visiting Professor under CV
+          Raman
+          International Fellowship , 09/2023
+        </ul>
+        <ul
+          style="margin-left: 5%; margin-right: 5%; word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 0; font-size: 15px; ">
           Dr. Kushwaha: BEST PAPER PRESENTATION AWARD in 11th Asia Conference on
           Mechanical and Materials Engineering, JAPAN 08-11 June 2023.
         </ul>
         <ul
-          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Roboto', sans-serif ;  padding: 0;font-size: 15px;">
+          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Quicksand', sans-serif ;  padding: 0;font-size: 15px;">
           Dr. Kushwaha: Visited The University of Tokyo & Tokyo University of
           Agriculture and Technology, 12-13 June 2023.
         </ul>
         <ul
-          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Roboto', sans-serif ;  padding: 0;font-size: 15px;">
+          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Quicksand', sans-serif ;  padding: 0;font-size: 15px;">
           Dr. Kushwaha: Visited several Universities and Industries in Taiwan
           (with IIT Indore delegation), 14-20 May, 2023.
         </ul>
         <ul
-          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Roboto', sans-serif ;  padding: 0;font-size: 15px;">
+          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Quicksand', sans-serif ;  padding: 0;font-size: 15px;">
           Dr. Kushwaha: Joined as HEAD of Department, MEMS, IIT Indore, 30th
           March, 2023.
         </ul>
         <ul
-          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Roboto', sans-serif ; padding: 0;font-size: 15px;">
+          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 0;font-size: 15px;">
           Mr. Akshay Kumar Sonwane: Joined the group as PhD Fellow (DST INSPIRE), 01
           Jan, 2023
         </ul>
-        <ul
-          style="margin-left: 5%; margin-right: 5%;word-spacing:1px; font-family: 'Roboto', sans-serif ; padding: 0;font-size: 15px;">
-          Dr. Kushwaha: served as GENERAL-CHAIR for 'International Conference on
-          Frontiers in Materials Engineering' (ICFME-2022), 14-16 December 2022,
-          at IIT Indore.
-        </ul>
+
       </div>
   </div>
 
@@ -351,27 +406,27 @@
 
   <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
     <div>
-      <p style="color: white; font-family: sans-serif; font-size: 14px; text-align: center;padding-top: 1%; letter-spacing: 1px;"><b>Contact Us: </b> <br><br>
-        POD 1A 204A, Department of Metallurgical Engineering and Materials Science <br>
-        Indian Institute of Technology Indore, 
+
+      <p
+        style="color: white; font-family: 'Quicksand',sans-serif; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
+
+        Department of Metallurgical Engineering and Materials Science,
+        Indian Institute of Technology Indore,
         Khandwa Road, Simrol, Indore-453552, INDIA
-     
-        <br>&nbsp
-        Phone No. : +91-731-660-5111 &nbsp &nbsp&nbsp&nbspEmail: neml@iiti.ac.in
       </p>
     </div>
     <div id="templatemo_footer">
 
-
       <p
-        style="color: rgb(255, 255, 255); font-family: sans-serif; font-size: 14px; margin-right: 20px; margin-left: 0;">
+        style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 13px; margin-right: 20px; margin-left: 0;">
         Copyright © 2023 NEM Lab IIT INDORE
       </p>
       <div>
-        <p style="color: rgb(255, 255, 255); font-family: sans-serif; font-size: 14px; margin: 0;">
+        <p style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 14px; margin: 0;">
           Developers :&nbsp;
-          <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/"> Shivam Singh</a> &
-          <a href="https://www.linkedin.com/in/prosenjitmondal98/">Prosenjit Mondal</a>
+          <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Kumar Singh</a>
+          &
+          <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
         </p>
       </div>
       <div>
@@ -391,6 +446,30 @@
         text-decoration: none;
         border-radius: 4px;
       ">Top</a>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  // Hide all slides
+        slides[i].style.animation = "";  // Reset the animation
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }  // Loop back to the first slide
+      slides[slideIndex - 1].style.display = "contents";  // Show the next slide
+      slides[slideIndex - 1].style.animation = "slideInOut 5s";  // Apply the animation
+      setTimeout(showSlides, 3000);  // Wait for 10 seconds before the next transition
+    }
+
+
+
+  </script>
+
+
 </body>
 
 </html>

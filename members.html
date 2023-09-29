@@ -15,16 +15,18 @@
   <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet" />
   <link href="updated_style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Roboto&display=swap" rel="stylesheet">
+
   <script language="javascript" type="text/javascript">
     function clearText(field) {
       if (field.defaultValue == field.value) field.value = "";
       else if (field.value == "") field.value = field.defaultValue;
     }
   </script>
-  <script src="../change_button_color_modified.js"></script>
+  <script src="change_button_color.js"></script>
   <style type="text/css">
     body {
-      font-family: arial
+      font-family: "Quicksand", sans-serif;
     }
 
     .page-header {
@@ -75,54 +77,72 @@
 
     }
 
+    .custom-container {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 96%;
+      /* 100% - 2% left margin - 2% right margin */
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   </style>
 </head>
 
 <body>
-  <div id="templatemo_header_wrapper">
-    <!--  Free Web Templates by TemplateMo.com  -->
-    <div id="templatemo_header">
-      <div class="abc">
-        <br />
-             
-        <a href="index.html">Home</a>                
-        <a href="prof_kushwaha.html">Prof. Kushwaha</a>                
-        <a href="members.html">Members</a>                
-        <a href="research.html">Research</a>                
-        <a href="publications.html">Publications</a>               
-        <a href="gallery.html">Gallery</a>
-      </div>
-    </div>
-    <!-- end of header -->
-  </div>
   <div id="templatemo_banner_wrapper">
     <div id="templatemo_banner">
-      <img alt="image" height="180" id="img" src="img/iiti logo.png" />
+      <img id="img" src="img/iiti logo.png" alt="image" height="70" style="filter:brightness(1); margin-top: 0;" />
+
       <div id="templatemo_banner_content">
-        <div class="header_01">
-          <br /><span style="font-size: 50px">Nano &amp; Energy Materials Lab</span>
-        </div>
-        <div class="header_02">
-          <span>Research Group of Prof. Kushwaha</span>
-        </div>
+        <div class="header_01"><br><span style="font-size: 32px;">Nano & Energy Materials Lab</span></div>
+        <div class="header_02"> <span>Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
+          </span></div>
+
       </div>
-      <div style="margin-right: 20px">
-        <img alt="NEM" class="rounded-gif" height="150" src="img/NEM.gif" style="border-radius: 50%" />
+      <div id="templatemo_header_wrapper">
+        <!--  Free Web Templates by TemplateMo.com  -->
+        <div id="templatemo_header">
+          <div class="abc">
+            <br />
+            <a style="color: rgb(255, 238, 87);" href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="prof_kushwaha.html">Prof. Kushwaha</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="members.html">Members</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="research.html">Research</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="publications.html">Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gallery.html">Gallery</a>
+          </div>
+        </div>
+        <!-- end of header -->
       </div>
+
+      <!-- <img id="img" src="img/Lab-logo.png" alt="image" height="180" /> -->
+
     </div>
     <!-- end of banner -->
   </div>
+  <hr
+    style="margin-top:0px; margin-left:0px;border: none; background-color: rgba(0, 100, 188, 0.8); width: 100%; height: 8px;">
+
+
   <!-- end of banner wrapper -->
   <!-- iframe start -->
-  <section class="container mt-0">
+  <section class="custom-container mt-0">
     <div class="row shadow-lg p-3 mb-1 bg-white rounded">
       <div id="templatemo_content_wrapper">
         <!-- buttons -->
+        <h2 style="font-weight: 700; font-size: 25px ;text-align: center;">
+          Members
+        </h2>
         <div id="column_w1000">
           <div id="content_buttons">
             <a href="members.html" target="iframe1">
-              <button class="button" id="button1" onclick="changeButtonColor(this)">
+              <button style="background-color: #b9e2f5; color: black;" class="button" id="button1"
+                onclick="changeButtonColor(this)">
                 Phd Students
               </button>
             </a>
@@ -228,7 +248,7 @@
                     </p>
                     <p><strong>Year:</strong> January 2022</p>
                     <p>
-                      <strong>Topic:</strong> Optiacl Sensors for Enviornmental Monitoring.
+                      <strong>Topic:</strong> Optical Sensors for Enviornmental Monitoring.
                     </p>
                     <!-- <p><strong>Topic:</strong> Web Development</p> -->
 
@@ -250,60 +270,47 @@
 </div>
 </section>
 <!-- footer start  -->
-<div id="templatemo_footer_wrapper" style="background-color: #0064bc">
+<div id="templatemo_footer_wrapper" style="background-color: #0064BC">
   <div>
-    <p style="
-            color: white;
-            font-family: sans-serif;
-            font-size: 14px;
-            text-align: center;
-            padding-top: 1%;
-          ">
-      204 A POD 1D, Department Of MEMS, IIT Indore, Khandwa Road, Simrol,
-      Indore-453552, INDIA <br />  contact : +91-731-660-5111  
-        &amp;nbspEmail: neml@iiti.ac.in
+
+    <p
+      style="color: white; font-family: 'Quicksand',sans-serif; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
+
+      Department of Metallurgical Engineering and Materials Science,
+      Indian Institute of Technology Indore,
+      Khandwa Road, Simrol, Indore-453552, INDIA
     </p>
   </div>
   <div id="templatemo_footer">
-    <p style="
-            color: rgb(255, 255, 255);
-            font-family: sans-serif;
-            font-size: 14px;
-            margin-right: 20px;
-            margin-left: 0;
-          ">
+
+    <p
+      style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 13px; margin-right: 20px; margin-left: 0;">
       Copyright © 2023 NEM Lab IIT INDORE
     </p>
     <div>
-      <p style="
-              color: rgb(255, 255, 255);
-              font-family: sans-serif;
-              font-size: 14px;
-              margin: 0;
-            ">
-        Developers : 
-        <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/">
-          Shivam Singh</a>
-        &amp;
-        <a href="https://www.linkedin.com/in/prosenjitmondal98/">Prosenjit Mondal</a>
+      <p style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 14px; margin: 0;">
+        Developers :&nbsp;
+        <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Kumar Singh</a> &
+        <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
       </p>
     </div>
+    <div>
+    </div>
   </div>
-</div>
-<!-- footer end -->
+</div> <!-- end of footer -->
 <a href="#" id="backToTop" style="
-        display: none;
-        border-radius: 10%;
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        z-index: 1000;
-        padding: 10px 20px;
-        background-color: #f30909;
-        color: white;
-        text-decoration: none;
-        border-radius: 4px;
-      ">Top</a>
+      display: none;
+      border-radius: 10%;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 1000;
+      padding: 10px 20px;
+      background-color: #f30909;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    ">Top</a>
 </body>
 
 </html>

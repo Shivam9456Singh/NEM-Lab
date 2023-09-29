@@ -59,3 +59,6 @@ document
     event.preventDefault();
     window.scroll({ top: 0, left: 0, behavior: "smooth" });
   });
+
+// image carousel
+const carousel = new bootstrap.Carousel("#myCarousel");

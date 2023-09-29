@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5em;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 12px;
   color: #242323;
   background-color: white;
@@ -32,13 +32,13 @@ body {
 
 a:link,
 a:visited {
-  color: #000000;
+  color: rgb(255, 238, 87);
   text-decoration: underline;
   font-weight: normal;
 }
 a:active,
 a:hover {
-  color: #000000;
+  color: rgb(255, 238, 87);
   text-decoration: none;
 }
 
@@ -54,10 +54,11 @@ img {
 }
 
 .abc {
-  font-family: sans-serif;
-  font-size: 22px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
   color: white;
-  float: center;
+  float: right;
+  word-spacing: 2px;
 }
 
 .abc a {
@@ -146,63 +147,53 @@ img {
 
 .header_01 {
   clear: both;
-  padding-bottom: 1%;
-  margin-bottom: 2%;
-  margin-left: 0%;
-
+  padding-top: 2%;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 10px;
   /* color: #ffffff; */
   color: black;
-  margin-left: 5px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-left: 0px;
+  font-family: "Quicksand", sans-serif;
 }
 .header_02 {
   clear: both;
-  padding-bottom: 1%;
-  margin-bottom: 2%;
+  padding-top: 2%;
   margin-left: 0%;
   font-weight: 100;
   line-height: 30px;
   /* color: #ffffff; */
   color: black;
-  margin-left: 5px;
-  font-family: "Roboto", sans-serif;
-  font-size: large;
+  margin-left: 0px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
 }
 
 #templatemo_header_wrapper {
-  width: 100%;
-  height: 60px;
-  margin: 0 auto;
+  height: 65px;
+
+  display: flex-start;
+  padding-top: 1%;
   background: rgba(0, 100, 188, 0.8);
 }
 
 #templatemo_header_wrapper {
   position: sticky;
+  margin-top: 0.5%;
+  display: flex;
+  margin-right: 0px;
+  width: 80%;
   top: 0;
   z-index: 1000; /* High z-index to ensure it stays above other content */
 }
 
-/* button hover */
-/* .button:hover {
-  background-color: rgba(3, 75, 22, 0.845);
-}
-.button:active,
-.button:focus {
-  background-color: rgba(3, 75, 22, 0.845);
-}
-.button.active {
-  background-color: rgba(3, 75, 22, 0.845);
-} */
-
 #templatemo_header {
-  width: 1150px;
+  width: auto;
   margin: 0 auto;
+  display: flex-end;
 }
 #templatemo_header a:hover {
   /* color: rgb(255, 235, 56); */
-  color: black;
+  color: rgb(255, 238, 87);
 }
 
 #templatemo_header #site_logo {
@@ -273,42 +264,33 @@ img {
 /* end of header */
 
 #templatemo_banner_wrapper {
-  /* background: linear-gradient(
-      rgba(121, 168, 200, 0.6),
-      rgba(115, 115, 115, 0.6)
-    ),
-    url("../img/background.jpg"); */
-  /* background-color: #57b3eb; */
-  background-color: #b9e2f5;
+  background-color: #ffffff;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 180px;
-  margin: auto;
+  margin-top: 0;
 }
 
 #templatemo_banner {
   display: flex;
-  align-items: center; /* Vertically center the items */
-  justify-content: space-between; /* Distribute space between the items */
+  align-items: flex-start; /* Vertically center the items */
+  justify-content: flex-start; /* Distribute space between the items */
 }
 #templatemo_banner #templatemo_banner_image {
-  height: 180px;
   margin-right: 20px;
 }
 
 #templatemo_banner_content {
-  float: right;
-  text-align: center;
+  float: left;
+  text-align: justify;
   width: 700px;
+  margin-left: 2%;
 }
 
 #templatemo_banner_content p {
   color: #acadaf;
   font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 20px;
 }
 
 #templatemo_banner_image_wrapper {
@@ -461,7 +443,7 @@ img {
   font-size: 14px;
   align-items: center;
   font-weight: 700;
-  font-family: sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: rgb(207, 249, 37);
 }
 
@@ -499,7 +481,7 @@ img {
   padding: 10px 25px;
   margin: 4px 2px;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
   border: none;
   cursor: pointer;

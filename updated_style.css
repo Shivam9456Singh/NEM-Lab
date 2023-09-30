@@ -268,14 +268,16 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: sticky;
   width: 100%;
   margin-top: 0;
 }
 
 #templatemo_banner {
   display: flex;
-  align-items: flex-start; /* Vertically center the items */
-  justify-content: flex-start; /* Distribute space between the items */
+  position: sticky;
+  align-items: flex-end; /* Vertically center the items */
+  justify-content: flex-end; /* Distribute space between the items */
 }
 #templatemo_banner #templatemo_banner_image {
   margin-right: 20px;

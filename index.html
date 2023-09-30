@@ -108,6 +108,7 @@
       margin-left: 2%;
       margin-right: 2%;
       width: 96%;
+      margin-bottom: 0px;
       /* 100% - 2% left margin - 2% right margin */
     }
 
@@ -173,40 +174,30 @@
     }
 
     .slideshow-container {
-      max-width: 100%;
+      max-width: 67%;
       position: relative;
       margin: auto;
+      /* center the container */
       overflow: hidden;
-
-
-      /* Hide images that are out of view */
-    }
-
-    .mySlides {
-      display: none;
-      position: relative;
-      width: 100%;
-      left: 100%;
-      /* Start from the right outside of view */
     }
 
     .mySlides img {
-      max-width: 100%;
-      /* Ensures the image doesn't exceed the width of the container */
-      max-height: 100%;
-      /* For example, set it to desired height */
+      width: 100%;
+      /* Set the image width to 100% of the container */
+      height: auto;
+      /* Adjust height automatically to maintain aspect ratio */
+      border-radius: 2%;
       display: block;
-      /* To remove any unwanted white space */
-      margin: auto;
-      /* To center the image within its container */
-      padding: 5%;
-
+      margin: 0;
+      padding: 0;
     }
+
+
 
 
     @keyframes slideInOut {
       0% {
-        left: 100%;
+        left: 50%;
         /* Start from the right side */
       }
 
@@ -268,7 +259,7 @@
       <div class="col-sm-5">
         <div class="card" style="align-content: center; justify-content: center;">
           <img src="img/AKK sir.jpeg" class="card-img-top" alt="..."
-            style="height: 300px; width:300px; padding-left: 5%; padding-right: 0; padding-top: 4%;">
+            style="height: 270px; width:270px; padding-left: 5%; padding-right: 0; padding-top: 4%;">
           <div class="card-body " style="text-align:justify" style="font-family: 'Quicksand', sans-serif;">
             <h5 class=" card-title font-weight-bold" style="color: #000000; ">
               Prof. Ajay Kumar
@@ -342,31 +333,31 @@
           <div>
             <div class="slideshow-container">
               <div class="mySlides">
-                <img src="img/slider/Picture1.jpg" alt="Image 1">
+                <img src="img/Index page photo/1-2023.jpg" alt="Image 1">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture2.jpg" alt="Image 2">
+                <img src="img/Index page photo/Picture1.jpg" alt="Image 2">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture3.jpg" alt="Image 3">
+                <img src="img/Index page photo/15-2023.jpg" alt="Image 3">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture5.jpg" alt="Image 4">
+                <img src="img/Index page photo/12-2022.jpg" alt="Image 4">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture6.jpg" alt="Image 5">
+                <img src="img/Index page photo/4-2022.jpg" alt="Image 5">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture7.jpg" alt="Image 6">
+                <img src="img/Index page photo/17-2023.jpg" alt="Image 6">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture9.jpg" alt="Image 7">
+                <img src="img/Index page photo/Picture14.png" alt="Image 7">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture10.jpg" alt="Image 8">
+                <img src="img/Index page photo/Picture8.jpg" alt="Image 8">
               </div>
               <div class="mySlides">
-                <img src="img/slider/Picture12.jpg" alt="Image 9">
+                <img src="img/Index page photo/Picture3.jpg" alt="Image 9">
               </div>
 
               <!-- Add more slides as needed -->
@@ -378,7 +369,7 @@
       </div><!--Row ends-->
   </section>
   <div
-    style="text-align: center; background-color: yellow; width: 150px; margin-left: 45%;margin-bottom: 4px; border-radius: 7.5px; height: 30px; padding-top: 5px;">
+    style="text-align: center; background-color: yellow; width: 150px; margin-left: 45%;margin-bottom: 1%; border-radius: 7.5px; height: 30px; padding-top: 5px;">
     <button type="submit" style="display:contents; text-decoration: none;text-align: center;"><a
         style="color: black;text-decoration: none; font-size: 18px;text-align: center; font-weight: 700;" class="blink"
         href="open_positions.html">Open Positions</a></button>

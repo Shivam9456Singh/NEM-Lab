@@ -427,17 +427,17 @@ img {
 
 #templatemo_footer_wrapper {
   width: 100%;
-  margin: 0 auto;
-  /* background: #727777; */
+  /* Stick the footer to the bottom */
+  position: relative;
+  margin-bottom: 0;
 }
 
 #templatemo_footer {
   width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   display: flex;
-  padding: 20px 30px;
-  margin: 0 auto;
+  padding: 19px 10px;
 }
 
 #templatemo_footer a {
@@ -551,4 +551,16 @@ img {
 #dr.ajay_brief {
   margin: auto 20px;
   display: block;
+}
+#templatemo_banner_wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+#content-wrap {
+  min-height: calc(
+    100% - 60px
+  ); /* Adjust this value based on your footer's height */
+  /* other styles... */
 }

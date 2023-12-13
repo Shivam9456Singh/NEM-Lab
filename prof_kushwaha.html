@@ -5,7 +5,7 @@
 
 <head>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <title>Nano &amp; Energy Lab</title>
+  <title>Materials Electrochemistry Lab</title>
   <meta content="free css templates, website templates, CSS, HTML" name="keywords" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="Simple Blue - Professional free XHTML/CSS template provided by templatemo.com" name="description" />
@@ -83,6 +83,24 @@
       width: 96%;
       /* 100% - 2% left margin - 2% right margin */
     }
+    .container {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #ddd; */ /* This line is commented out to remove the border */
+    padding: 10px;
+}
+
+.image {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+.description {
+    flex: 1;
+}
+
+
 
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   </style>
@@ -94,7 +112,7 @@
       <img id="img" src="img/iiti logo.png" alt="image" height="70" style="filter:brightness(1); margin-top: 0;" />
 
       <div id="templatemo_banner_content">
-        <div class="header_01"><br><span style="font-size: 32px;">Nano & Energy Materials Lab</span></div>
+        <div class="header_01"><br><span style="font-size: 32px;">Materials Electrochemistry Lab</span></div>
         <div class="header_02"> <span>Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
           </span></div>
 
@@ -120,24 +138,48 @@
 
     </div>
     <!-- end of banner -->
-    <hr
-      style="margin-top:0px; margin-left:0px;border: none; background-color: rgba(0, 100, 188, 0.8); width: 100%; height: 8px;">
   </div>
-
+  <hr
+    style="margin-top:0px; margin-left:0px;border: none; background-color: rgba(0, 100, 188, 0.8); width: 100%; height: 8px;">
 
 
   <!-- end of banner -->
   </div>
-  <!-- end of banner wrapper -->
-  <!-- iframe start -->
   <section class="custom-container mt-0">
 
     <div class="row shadow-lg p-3 mb-1 bg-white rounded">
       <div id="templatemo_content_wrapper">
         <!-- buttons -->
-        <h2 style="font-weight: 700; font-size: 25px ;text-align: center;">
-          Prof. Ajay Kumar Kushwaha
-        </h2>
+        
+    <!-- new image div -->
+        <div class="container">
+          <img src="img/AKK sir.jpeg" alt="Image Description" class="image">
+          <div class="description">
+            <div class="card-body" style="text-align: justify; font-family: 'Quicksand', sans-serif; margin-left: 20px;">
+              <h5 class="card-title font-weight-bold" style="color: #000000;">
+                Prof. Ajay Kumar Kushwaha<br />
+              </h5>
+              <p class="card-text">
+                <p class="font-weight-bold" style="font-size:16px; color: #000000; font-family: 'Quicksand', sans-serif; font-weight: 900;">
+                  Associate Professor & HoD,<br>
+                  <span style="font-size: 13px; font-weight: 5px; color: #000000;">Department of Metallurgical Engineering & Materials Science (MEMS)</span>
+                </p>
+                <span style="font-size: 13px;font-style: italic;">Faculty, Center for Advanced Electronics (CAE)</span><br>
+                <span style="font-size: 13px;font-style: italic;">Faculty, Center of Futuristic Defense and Space Technology (CFDST)</span><br>
+                <span style="font-size: 13px;font-family: 'Quicksand', sans-serif;">Indian Institute of Technology Indore – 453552</span><br>
+                <span style="color: rgb(34, 34, 196);" class="font-weight-bold">Phone:</span> +91-731-660-3250 (office)<br>
+                <span style="color: rgb(47, 47, 209);" class="font-weight-bold">E-mail:</span> akk@iiti.ac.in<br>
+              </p>
+        
+              <div style="margin-top: 2%;">
+                <a href="https://www.linkedin.com/in/dr-ajay-k-kushwaha-16b46a49/"><img src="img/linkedin.png" alt="" height="30px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.researchgate.net/profile/Dr-Ajay-Kushwaha-2"><img src="img/researchgate.png" alt="" height="30px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://www.youtube.com/channel/UC2gzaDDzQsrIqRXQjOrx9Xw"><img src="img/youtube.png" alt="" height="30px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="https://scholar.google.co.in/citations?user=1ck-NV0AAAAJ&hl=en"><img src="img/googlescholar.png" alt="" height="39px"></a>
+              </div>
+            </div>  </div>
+      </div>
+<!-- end image -->
         <div id=" column_w1000">
           <div id="content_buttons">
             <a href="prof_kushwaha.html" target="iframe1">
@@ -172,12 +214,12 @@
               </button>
             </a>
           </div>
-          <br /><br />
+         
 
 
-          <div style="display: flex;">
-            <img alt="" height="200px" src="img/AKK sir.jpeg"
-              style="margin-right: 2%; margin-left: 2%; border-radius: 20px" />
+          
+          <br>
+          <div>
             <p style="font-size:14px ; text-align:justify;">
               Dr. Ajay was born in Kanpur, a large industrial city located
               at central-western part of Uttar Pradesh, India. He received
@@ -249,38 +291,34 @@
 </div>
 </section>
 <!-- footer start  -->
-<footer>
-  <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
+<div id="templatemo_footer_wrapper" style="background-color: #0064BC">
+  <div>
+
+    <p style="color: white; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
+
+      Department of Metallurgical Engineering and Materials Science,
+      Indian Institute of Technology Indore,
+      Khandwa Road, Simrol, Indore-453552, INDIA
+    </p>
+  </div>
+  <div id="templatemo_footer">
+
+    <p style="color: rgb(255, 255, 255); font-size: 13px; margin-right: 20px; margin-left: 0;">
+      Copyright © 2023 NEM Lab IIT INDORE
+    </p>
     <div>
-
-      <p
-        style="color: white; font-family: 'Quicksand',sans-serif; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
-
-        Department of Metallurgical Engineering and Materials Science,
-        Indian Institute of Technology Indore,
-        Khandwa Road, Simrol, Indore-453552, INDIA
+      <p style="color: rgb(255, 255, 255);font-size: 14px; margin: 0;">
+        Developers :&nbsp;
+        <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Singh</a> &
+        <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
       </p>
     </div>
-    <div id="templatemo_footer">
-
-      <p
-        style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 13px; margin-right: 20px; margin-left: 0;">
-        Copyright © 2023 NEM Lab IIT INDORE
-      </p>
-      <div>
-        <p style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 14px; margin: 0;">
-          Developers :&nbsp;
-          <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Kumar
-            Singh</a>
-          &
-          <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
-        </p>
-      </div>
-      <div>
-      </div>
+    <div>
     </div>
-  </div> <!-- end of footer -->
-  <a href="#" id="backToTop" style="
+  </div>
+</div>
+<!-- end of footer -->
+<a href="#" id="backToTop" style="
         display: none;
         border-radius: 10%;
         position: fixed;
@@ -293,29 +331,6 @@
         text-decoration: none;
         border-radius: 4px;
       ">Top</a>
-
-  <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  // Hide all slides
-        slides[i].style.animation = "";  // Reset the animation
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }  // Loop back to the first slide
-      slides[slideIndex - 1].style.display = "contents";  // Show the next slide
-      slides[slideIndex - 1].style.animation = "slideInOut 5s";  // Apply the animation
-      setTimeout(showSlides, 3000);  // Wait for 10 seconds before the next transition
-    }
-
-
-
-  </script>
-</footer>
 </body>
 
 </html>

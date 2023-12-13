@@ -1,11 +1,11 @@
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
+  
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nano & Energy Lab</title>
+  <title>Materials Electrochemistry Lab</title>
   <meta name="keywords" content="free css templates, website templates, CSS, HTML" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -53,8 +53,6 @@
         font-size: 24px;
       }
     }
-
-
 
     .page-header {
       padding-bottom: 9px;
@@ -105,10 +103,9 @@
     }
 
     .custom-container {
-      margin-left: 2%;
-      margin-right: 2%;
-      width: 96%;
-      margin-bottom: 0px;
+      width: 100%;
+      justify-content: center;
+    
       /* 100% - 2% left margin - 2% right margin */
     }
 
@@ -172,29 +169,6 @@
 
       /* This will give some space between the image and the text */
     }
-
-    .slideshow-container {
-      max-width: 67%;
-      position: relative;
-      margin: auto;
-      /* center the container */
-      overflow: hidden;
-    }
-
-    .mySlides img {
-      width: 100%;
-      /* Set the image width to 100% of the container */
-      height: auto;
-      /* Adjust height automatically to maintain aspect ratio */
-      border-radius: 2%;
-      display: block;
-      margin: 0;
-      padding: 0;
-    }
-
-
-
-
     @keyframes slideInOut {
       0% {
         left: 50%;
@@ -212,10 +186,42 @@
         /* Slide out to the left */
       }
     }
+    /* Centering Slider Images */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+}
 
-    footer {
-      display: block;
-    }
+.slider img {
+  width: 90%;
+  height:80%;
+  display:flex; /* Hide all images initially */
+  transition: opacity 0.5s; /* Smooth transition for the slideshow */
+}
+
+/* Arrow styles */
+.arrow {
+  cursor:pointer;
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
   </style>
 </head>
 
@@ -225,7 +231,7 @@
       <img id="img" src="img/iiti logo.png" alt="image" height="70" style="filter:brightness(1); margin-top: 0;" />
 
       <div id="templatemo_banner_content">
-        <div class="header_01"><br><span style="font-size: 32px;">Nano & Energy Materials Lab</span></div>
+        <div class="header_01"><br><span style="font-size: 32px;">Materials Electrochemistry Lab</span></div>
         <div class="header_02"> <span>Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
           </span></div>
 
@@ -246,148 +252,59 @@
         <!-- end of header -->
       </div>
 
-      <!-- <img id="img" src="img/Lab-logo.png" alt="image" height="180" /> -->
-
     </div>
     <!-- end of banner -->
     <hr
       style="margin-top:0px; margin-left:0px;border: none; background-color: rgba(0, 100, 188, 0.8); width: 100%; height: 8px;">
+  </div>
+<div style="margin-top:0px;">
+  <div class="slider" style="margin-top: 0;">
+    <span class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</span>
+    <span class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</span>
+    <!-- Existing img tags -->
+    <img src="img/Index_page_photo/ReseachIndex4.jpg" alt="Image 3">
+    <img src="img/Index_page_photo/ResearchIndex1.jpg" alt="Image 1">
+    <img src="img/Index_page_photo/ResearchIndex2.jpg" alt="Image 2">
+    <img src="img/Index_page_photo/ResearchIndex3.jpg" alt="Image 3">
+    
 
   </div>
-
-
-  <!-- end of banner wrapper -->
-
-
-  <section class="custom-container mt-0 pr-0 pl-0">
-    <div class="row  p-3 mb-1 bg-white rounded">
-      <div class="col-sm-5">
-        <div class="card" style="align-content: center; justify-content: center;">
-          <img src="img/AKK sir.jpeg" class="card-img-top" alt="..."
-            style="height: 270px; width:270px; padding-left: 5%; padding-right: 0; padding-top: 4%;">
-          <div class="card-body " style="text-align:justify" style="font-family: 'Quicksand', sans-serif;">
-            <h5 class=" card-title font-weight-bold" style="color: #000000; ">
-              Prof. Ajay Kumar
-              Kushwaha
-              <br />
-            </h5>
-
-
-            <p class="card-text">
-            <p>
-            <p class="font-weight-bold"
-              style="font-size:16px; color: #000000; font-family: 'Quicksand',sans-serif; font-weight: 900; ">
-              Associate Professor & HoD,</br></p>
-            <span style="font-size: 12px; text-align: justify; font-weight:5px;color: #000000;">Department
-              of
-              Metallurgical Engineering
-              &
-              Materials Science (MEMS)</span><br>
-            &
-            </p>
-            <span class="font-weight-bold" style="font-style:italic;">
-              Faculty</span>, Center for Advanced
-            Electronics (CAE)<br>
-            <span class=" font-weight-bold" style="font-style:italic;">
-              Faculty</span>, Center of Futuristic
-            Defense and Space Technology
-            (CFDST)<br>
-            <span class=" font-weight-bold" style="font-family: 'Quicksand', sans-serif;"> Indian Institute of
-              Technology Indore – 453552</span><br>
-            <span class="font-weight-bold" style="color: rgb(34, 34, 196);"> Phone:</span> +91-731-660-3250 (office)<br>
-
-            <span class="font-weight-bold" style="color: rgb(47, 47, 209);"> E-mail:</span> akk@iiti.ac.in<br>
-
-            </p>
-            </p>
-            <div style="margin-top: 2%;">
-              <a href="https://www.linkedin.com/in/dr-ajay-k-kushwaha-16b46a49/"><img src="img/linkedin.png" alt=""
-                  height="30px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              <a href="https://www.researchgate.net/profile/Dr-Ajay-Kushwaha-2"><img src="img/researchgate.png" alt=""
-                  height="30px"></a><br><br>
-              <a href="https://www.youtube.com/channel/UC2gzaDDzQsrIqRXQjOrx9Xw"><img src="img/youtube.png" alt=""
-                  height="30px"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-              <a href="https://scholar.google.co.in/citations?user=1ck-NV0AAAAJ&hl=en"><img src="img/googlescholar.png"
-                  alt="" height="39px"></a>
+</div>
+<div class="custom-container mt-2">
+              <p class=" card-text text-justify" style="font-size: 16px; margin-left: 5%; margin-right: 5%;"> Our Group is motivated to develop low cost,
+                large scale, and facile materials for clean energy, electronics
+                & electrochemical devices. At present, the group works on synthesis of functional nanomaterials and thin
+                films of metal oxides, metals, alloys & 2D materials (graphene and mxenes). The group is interested to
+                understand the fundamental properties of nanoscale materials and effect of interfacial properties on
+                electrochemical devices.
+  
+                At present, the group has interest in the following research areas. <br>
+              </p><br>
+              <p class=" card-text text-justify" style="font-size: 16px; margin-left:20%; margin-right:4%;">
+                
+               • Nanomaterials & Thin Films<br>
+               • Semiconductors<br>
+               • Clean Energy: Hydrogen<br>
+               • Electrodeposition & Interfaces<br>
+               • Electrochemical Sensors<br>
+               • Electrochemical Corrosion<br>
+              </p>
+              </p>
             </div>
-
           </div>
         </div>
-      </div>
-      <div class="col-sm-7 shadow-lg p-3 mb-5 bg-white rounded">
-        <div class="card">
 
-          <div class="card-body" style="font-family: 'Quicksand', sans-serif; color:#000000; word-spacing: 1px;
-            text-align: justify;">
-            <p style="text-align: center; font-size:18px; color: red; margin-bottom: 1%">
-              Welcome to our
-              research group
-              page!</p>
-            <p class=" card-text text-justify" style="font-size: 16px;"> Our Group is motivated to develop low cost,
-              large scale, and facile materials for clean energy, electronics
-              & electrochemical devices. At present, the group works on synthesis of functional nanomaterials and thin
-              films of metal oxides, metals, alloys & 2D materials (graphene and mxenes). The group is interested to
-              understand the fundamental properties of nanoscale materials and effect of interfacial properties on
-              electrochemical devices.
-
-
-            </p>
-            </p>
-          </div>
-
-          <div>
-            <div class="slideshow-container">
-              <div class="mySlides">
-                <img src="img/Index page photo/1-2023.jpg" alt="Image 1">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/Picture1.jpg" alt="Image 2">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/15-2023.jpg" alt="Image 3">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/12-2022.jpg" alt="Image 4">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/4-2022.jpg" alt="Image 5">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/17-2023.jpg" alt="Image 6">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/Picture14.png" alt="Image 7">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/Picture8.jpg" alt="Image 8">
-              </div>
-              <div class="mySlides">
-                <img src="img/Index page photo/Picture3.jpg" alt="Image 9">
-              </div>
-
-              <!-- Add more slides as needed -->
-            </div>
-
-
-          </div>
-        </div>
-      </div><!--Row ends-->
-  </section>
-  <div
-    style="text-align: center; background-color: yellow; width: 150px; margin-left: 45%;margin-bottom: 1%; border-radius: 7.5px; height: 30px; padding-top: 5px;">
-    <button type="submit" style="display:contents; text-decoration: none;text-align: center;"><a
-        style="color: black;text-decoration: none; font-size: 18px;text-align: center; font-weight: 700;" class="blink"
-        href="open_positions.html">Open Positions</a></button>
-  </div>
-
-  <div style="width: 100%;">
-    <section class="container mt-0 pr-0 pl-0 mb-lg-2">
-
-      <div class="row shadow-lg p-0 mb-1 bg-white rounded ">
+  <div style="width: 78%;">
+    <section class="custom-container mb-0">
+      <div class="row p-1 mb-0 bg-white rounded">
         <l class="blink"
-          style="margin-left: 5%; word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 1%; font-size: 20px;font-weight: 700 ;margin-top: 2%; list-style-type:none; text-align: center; text-decoration: underline;font-family: 'Roboto', sans-serif ">
-          NEWS:
+          style="margin-left: 5%; word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 1%; font-size: 20px;font-weight: 700 ;margin-top: 2%; list-style-type:none; text-align: center; text-decoration:none;font-family: 'Roboto', sans-serif ">
+          Recent updates:
         </l>
+        <ul
+          style="margin-left: 5%; margin-right: 5%; word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 0; font-size: 15px; margin-top: 1%; ">
+          <b> Prof. Irina A. Kurzina (Tomsk State University, Russia) & Dr. Mariya </b> Visited us a Collaborator under Indo-Russia Project (Nov-2023)  
+        </ul>
         <ul
           style="margin-left: 5%; margin-right: 5%; word-spacing:1px; font-family: 'Quicksand', sans-serif ; padding: 0; font-size: 15px; margin-top: 1%; ">
           Welcome <b> Dr. Paul (University Nangui Abrogoua Abidjan, Cote D'Ivoire)</b> as
@@ -421,80 +338,166 @@
           <b>Mr. Akshay Kumar Sonwane</b> Joined the group as PhD Fellow (DST INSPIRE), 03
           Jan, 2023
         </ul>
+      </div>
 
+      </div>
+      <!--Add news here-->
+    <!-- First Row of Cards -->
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-bottom: 20px;">
+  <!-- First Card -->
+  <div class="card" style="width: 30%; margin: 0 10px;">
+      <img src="img/Index_page_photo/news3.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <p class="card-text">Prof. Kushwaha visited IIT Roorkee for IMESD-2023 (7-10th Dec 2023) and delivered an invited talk.</p>
       </div>
   </div>
+  <!-- Second Card -->
+  <div class="card" style="width: 30%; margin: 0 10px;">
+      <img src="img/Index_page_photo/news2.jpeg" alt="Image 1" />
+      <div class="card-body">
+          <p class="card-text">Prof. Kushwaha visited Chaudhary Charan Singh University, Meerut to conduct an Exam 11 Dec 2023.</p>
+      </div>
+  </div>
+  <!-- Third Card -->
+  <div class="card" style="width: 30%; margin: 0 10px;">
+      <img src="img/Index_page_photo/news1.jpeg" alt="Image 2" />
+      <div class="card-body">
+          <p class="card-text">Prof. Kushwaha visited Chaudhary Charan Singh University, Meerut to conduct an Exam 11 Dec 2023. </p>
+      </div>
+  </div>
+</div>
 
+<!-- Second Row of Cards (if any) -->
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-bottom: 20px;">
+  <!-- Cards for the second row go here -->
+  <div class="card" style="width: 30%; margin: 0 10px;">
+    <img src="img/Index_page_photo/news4.jpeg" alt="Image 3" />
+    <div class="card-body">
+        <p class="card-text">Prof. Kushwaha visited Dr. Babasaheb Ambedkher University Lucknow to deliver a talk and also interacted with Master's students (6 Dec 2023).</p>
+    </div>
+  </div>
+  <div class="card" style="width: 30%; margin: 0 10px;">
+    <img src="img/Index_page_photo/news5.jpeg" alt="Image 4" />
+    <div class="card-body">
+        <p class="card-text"> Prof. Irina A. Kurzina (Tomsk State University, Russia) & Dr. Mariya </b> Visited us a Collaborator under Indo-Russia Project (Nov-2023)  </p>
+    </div>
+  </div>
+  <div class="card" style="width: 30%; margin: 0 10px;">
+    <img src="img/Index_page_photo/news6.jpg" alt="Image 5" />
+    <div class="card-body">
+        <p class="card-text">Welcome <b> Dr. Paul (University Nangui Abrogoua Abidjan, Cote D'Ivoire)</b> as
+          Visiting Professor under CV
+          Raman
+          International Fellowship , 09/2023</p>
+    </div>
+  </div>
+
+</div>
+
+
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-bottom: 20px;">
+  <!-- Cards for the second row go here -->
+  <div class="card" style="width: 30%; margin: 0 10px;">
+    <img src="img/Index_page_photo/news7.png" alt="Image 6" />
+    
+  </div>
+  <div class="card" style="width: 30%; margin: 0 10px;">
+    <img src="img/Index_page_photo/news10.jpg" alt="Image 7" />
+  </div>
+  <div class="card" style="width: 30%; margin: 0 10px;">
+    <img src="img/Index_page_photo/news9.jpg" alt="Image 8" />
+  </div>
+
+</div>
+
+</div>
+
+
+</div>
+
+      
+    </div>
+    </div>
   </section>
+    
+  
 
+  <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
+    <div>
+      <p
+        style="color: white; font-family: 'Quicksand',sans-serif; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
 
-  <footer>
-    <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
+        Department of Metallurgical Engineering and Materials Science,
+        Indian Institute of Technology Indore,
+        Khandwa Road, Simrol, Indore-453552, INDIA
+      </p>
+    </div>
+    <div id="templatemo_footer">
+
+      <p
+        style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 13px; margin-right: 20px; margin-left: 0;">
+        Copyright © 2023 NEM Lab IIT INDORE
+      </p>
       <div>
-
-        <p
-          style="color: white; font-family: 'Quicksand',sans-serif; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
-
-          Department of Metallurgical Engineering and Materials Science,
-          Indian Institute of Technology Indore,
-          Khandwa Road, Simrol, Indore-453552, INDIA
+        <p style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 14px; margin: 0;">
+          Developers :&nbsp;
+          <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Kumar Singh</a>
+          &
+          <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
         </p>
       </div>
-      <div id="templatemo_footer">
-
-        <p
-          style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 13px; margin-right: 20px; margin-left: 0;">
-          Copyright © 2023 NEM Lab IIT INDORE
-        </p>
-        <div>
-          <p style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 14px; margin: 0;">
-            Developers :&nbsp;
-            <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Kumar
-              Singh</a>
-            &
-            <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
-          </p>
-        </div>
-        <div>
-        </div>
+      <div>
       </div>
-    </div> <!-- end of footer -->
-    <a href="#" id="backToTop" style="
-          display: none;
-          border-radius: 10%;
-          position: fixed;
-          bottom: 10px;
-          right: 10px;
-          z-index: 1000;
-          padding: 10px 20px;
-          background-color: #f30909;
-          color: white;
-          text-decoration: none;
-          border-radius: 4px;
-        ">Top</a>
+    </div>
+  </div> <!-- end of footer -->
+  <a href="#" id="backToTop" style="
+        display: none;
+        border-radius: 10%;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1000;
+        padding: 10px 20px;
+        background-color: #f30909;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+      ">Top</a>
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
+  <script>
+// JavaScript for slideshow functionality
+var currentSlide = 0;
+var slides = document.querySelectorAll('.slider img');
+var totalSlides = slides.length;
+var slideInterval = 5000; // 3 seconds for each slide
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  // Hide all slides
-          slides[i].style.animation = "";  // Reset the animation
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }  // Loop back to the first slide
-        slides[slideIndex - 1].style.display = "contents";  // Show the next slide
-        slides[slideIndex - 1].style.animation = "slideInOut 5s";  // Apply the animation
-        setTimeout(showSlides, 3000);  // Wait for 10 seconds before the next transition
-      }
+function showSlide(index) {
+  slides.forEach((slide, idx) => {
+    slide.style.display = idx === index ? 'block' : 'none';
+  });
+}
+
+function nextSlide(step = 1) {
+  currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+  showSlide(currentSlide);
+}
+
+// Automatic slideshow
+setInterval(() => {
+  nextSlide();
+}, slideInterval);
+
+// Initial display
+showSlide(currentSlide);
+
+// Update the changeSlide function for arrow navigation
+function changeSlide(step) {
+  nextSlide(step);
+}
+
+  </script>
 
 
-
-    </script>
-  </footer>
 </body>
 
 </html>

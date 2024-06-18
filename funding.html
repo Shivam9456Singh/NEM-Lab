@@ -1,310 +1,419 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Nano &amp; Energy Lab</title>
+    <meta
+      content="free css templates, website templates, CSS, HTML"
+      name="keywords"
+    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Simple Blue - Professional free XHTML/CSS template provided by templatemo.com"
+      name="description"
+    />
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="updated_style.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript">
+      function clearText(field) {
+        if (field.defaultValue == field.value) field.value = "";
+        else if (field.value == "") field.value = field.defaultValue;
+      }
+    </script>
+    <script src="change_button_color.js"></script>
+    <style type="text/css">
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
 
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <title>Nano &amp; Energy Lab</title>
-  <meta content="free css templates, website templates, CSS, HTML" name="keywords" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="Simple Blue - Professional free XHTML/CSS template provided by templatemo.com" name="description" />
-  <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" rel="stylesheet" />
-  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link href="updated_style.css" rel="stylesheet" />
-  <script language="javascript" type="text/javascript">
-    function clearText(field) {
-      if (field.defaultValue == field.value) field.value = "";
-      else if (field.value == "") field.value = field.defaultValue;
-    }
-  </script>
-  <script src="change_button_color.js"></script>
-  <style type="text/css">
-    body {
-      font-family: "Quicksand", sans-serif;
-    }
+      .page-header {
+        padding-bottom: 9px;
+        margin: 20px 0 20px;
+        border-bottom: 1px solid #eeeeee;
+      }
 
-    .page-header {
-      padding-bottom: 9px;
-      margin: 20px 0 20px;
-      border-bottom: 1px solid #eeeeee;
-    }
+      .hero-unit {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #eeeeee;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+      }
 
-    .hero-unit {
-      padding: 10px;
-      margin-bottom: 10px;
-      background-color: #eeeeee;
-      -webkit-border-radius: 6px;
-      -moz-border-radius: 6px;
-      border-radius: 6px;
-    }
+      .hero-unit h1 {
+        margin-bottom: 0;
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1px;
+        color: inherit;
+      }
 
-    .hero-unit h1 {
-      margin-bottom: 0;
-      font-size: 60px;
-      line-height: 1;
-      letter-spacing: -1px;
-      color: inherit;
-    }
+      .hero-unit p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        color: inherit;
+      }
 
-    .hero-unit p {
-      font-size: 18px;
-      font-weight: 200;
-      line-height: 30px;
-      color: inherit;
-    }
+      .span8 {
+        width: 620px;
+      }
 
-    .span8 {
-      width: 620px;
-    }
+      .span3 {
+        width: 220px;
+      }
 
-    .span3 {
-      width: 220px;
-    }
+      .bg-black {
+        /* color:#FFFFE0" */
+        background-color: #000000;
+      }
 
-    .bg-black {
-      /* color:#FFFFE0" */
-      background-color: #000000;
-    }
+      .text-cream {
+        color: #FFFFE0"
 
-    .text-cream {
-      color: #FFFFE0"
+      }
 
-    }
+      .custom-container {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        height: auto;
 
-    .custom-container {
-      margin-left: 2%;
-      margin-right: 2%;
-      width: 96%;
-      height: auto;
-
-    }
+      }
 
 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  </style>
-</head>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+  </head>
 
-<body>
-  <div id="templatemo_banner_wrapper">
-    <div id="templatemo_banner">
-      <img id="img" src="img/iiti logo.png" alt="image" height="70" style="filter:brightness(1); margin-top: 0;" />
+  <body>
+    <div id="templatemo_banner_wrapper">
+      <div id="templatemo_banner">
+        <img
+          id="img"
+          src="img/iiti logo.png"
+          alt="image"
+          height="70"
+          style="filter: brightness(1); margin-top: 0"
+        />
 
-      <div id="templatemo_banner_content">
-        <div class="header_01"><br><span style="font-size: 32px;">Nano & Energy Materials Lab</span></div>
-        <div class="header_02"> <span>Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
-          </span></div>
-
-      </div>
-      <div id="templatemo_header_wrapper">
-        <!--  Free Web Templates by TemplateMo.com  -->
-        <div id="templatemo_header">
-          <div class="abc">
-            <br />
-            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="prof_kushwaha.html">Prof. Kushwaha</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="members.html">Members</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a style="color: rgb(255, 238, 87);" href="research.html">Research</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="publications.html">Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="gallery.html">Gallery</a>
+        <div id="templatemo_banner_content">
+          <div class="header_01">
+            <br /><span style="font-size: 32px"
+              >Nano & Energy Materials Lab</span
+            >
+          </div>
+          <div class="header_02">
+            <span
+              >Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
+            </span>
           </div>
         </div>
-        <!-- end of header -->
-      </div>
-
-      <!-- <img id="img" src="img/Lab-logo.png" alt="image" height="180" /> -->
-
-    </div>
-    <!-- end of banner -->
-    <hr
-      style="margin-top:0px; margin-left:0px;border: none; background-color: rgba(0, 100, 188, 0.8); width: 100%; height: 8px;">
-
-  </div>
-
-  <!-- end of banner wrapper -->
-  <!-- iframe start -->
-  <section class="custom-container mt-0">
-    <div class="row shadow-lg p-3 mb-1 bg-white rounded">
-      <div id="templatemo_content_wrapper">
-        <!-- buttons -->
-        <h2 style="font-weight: 700; font-size: 25px ;text-align: center;">
-          Research
-        </h2>
-        <div id="column_w1000">
-          <div id="content_buttons">
-            <a href="research.html" target="iframe1">
-              <button class="button" id="button1" onclick="changeButtonColor(this)">
-                Research Interests
-              </button>
-            </a>
-            <a href="facilities.html" target="iframe1">
-              <button class="button" id="button2" onclick="changeButtonColor(this)">
-                Facilities
-              </button>
-            </a>
-            <a href="funding.html" target="iframe1">
-              <button style="background-color: #b9e2f5; color: black;" class="button" id="button3"
-                onclick="changeButtonColor(this)">
-                Projects & Funding
-              </button>
-            </a>
-            <a href="colaborators.html" target="iframe1">
-              <button class="button" id="button4" onclick="changeButtonColor(this)">
-                Colaborators
-              </button>
-            </a>
-            <a href="research_gallery.html" target="iframe1">
-              <button class="button" id="button5" onclick="changeButtonColor(this)">
-                Research Gallery
-              </button>
-            </a>
+        <div id="templatemo_header_wrapper">
+          <!--  Free Web Templates by TemplateMo.com  -->
+          <div id="templatemo_header">
+            <div class="abc">
+              <br />
+              <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="prof_kushwaha.html">Prof. Kushwaha</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="members.html">Members</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a style="color: rgb(255, 238, 87)" href="research.html"
+                >Research</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="publications.html">Publications</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="gallery.html">Gallery</a>
+            </div>
           </div>
-          <br /><br />
+          <!-- end of header -->
+        </div>
 
-          <!-- content body start -->
-          <style>
-            /* * {
+        <!-- <img id="img" src="img/Lab-logo.png" alt="image" height="180" /> -->
+      </div>
+      <!-- end of banner -->
+      <hr
+        style="
+          margin-top: 0px;
+          margin-left: 0px;
+          border: none;
+          background-color: rgba(0, 100, 188, 0.8);
+          width: 100%;
+          height: 8px;
+        "
+      />
+    </div>
+
+    <!-- end of banner wrapper -->
+    <!-- iframe start -->
+    <section class="custom-container mt-0">
+      <div class="row shadow-lg p-3 mb-1 bg-white rounded">
+        <div id="templatemo_content_wrapper">
+          <!-- buttons -->
+          <h2 style="font-weight: 700; font-size: 25px; text-align: center">
+            Research
+          </h2>
+          <div id="column_w1000">
+            <div id="content_buttons">
+              <a href="research.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button1"
+                  onclick="changeButtonColor(this)"
+                >
+                  Research Interests
+                </button>
+              </a>
+              <a href="facilities.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button2"
+                  onclick="changeButtonColor(this)"
+                >
+                  Facilities
+                </button>
+              </a>
+              <a href="funding.html" target="iframe1">
+                <button
+                  style="background-color: #b9e2f5; color: black"
+                  class="button"
+                  id="button3"
+                  onclick="changeButtonColor(this)"
+                >
+                  Projects & Funding
+                </button>
+              </a>
+              <a href="collaborators.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button4"
+                  onclick="changeButtonColor(this)"
+                >
+                  Collaborators
+                </button>
+              </a>
+              <a href="research_gallery.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button5"
+                  onclick="changeButtonColor(this)"
+                >
+                  Research Gallery
+                </button>
+              </a>
+            </div>
+            <br /><br />
+
+            <!-- content body start -->
+            <style>
+              /* * {
                 font-family: "Roboto", sans-serif;
               } */
 
-            .custom-list {
-              margin-top: 2%;
-            }
+              .custom-list {
+                margin-top: 2%;
+              }
 
-            .custom-list ul {
-              list-style-type: disc;
-              padding-left: 20px;
-            }
+              .custom-list ul {
+                list-style-type: disc;
+                padding-left: 20px;
+              }
 
-            .custom-list ul li {
-              display: flex;
-              align-items: center;
-              margin-bottom: 10px;
-              padding: 5px;
-              border-radius: 10px;
-              background: linear-gradient(90deg, #f9f9f9, #e6e6e6);
-            }
-          </style>
+              .custom-list ul li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                padding: 5px;
+                border-radius: 10px;
+                background: linear-gradient(90deg, #f9f9f9, #e6e6e6);
+              }
+            </style>
 
-          <body>
+            <body>
+              <div class="text-with-line">
+                <p
+                  style="
+                    font-weight: bolder;
+                    color: rgb(28, 81, 127);
+                    font-size: 20px;
+                  "
+                >
+                  Sponsered Projects
+                </p>
+              </div>
 
-
-            <div class="text-with-line">
-              <p style="font-weight: bolder; color: rgb(28, 81, 127);font-size: 20px;">
-                Sponsered Projects
-              </p>
-            </div>
-
-            <hr style="
+              <hr
+                style="
                   width: 100%;
                   height: 2px;
                   border-width: 0;
 
                   color: gray;
                   background-color: rgb(78, 131, 201);
-                " />
+                "
+              />
 
-            <div class="d-flex position-relative align-items-center custom-list">
-              <ul>
-                <li>
-                  <p>
-                    <strong>Project-6:</strong> Development of flexible
-                    electrode for flexible energy storage devices; Sponsoring
-                    Agency : NPIU-TEQIP-III ; Role : Co-Investigator; Amount:
-                    INR 14.38 Lakhs; Duration: 2019-2020, (Ongoing)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Project-5:</strong> Low Cost nanoadsorbent for the
-                    removal of heavy metal ion from waste water; Sponsoring
-                    Agency : NPIU-TEQIP-III ; Role : Co-Investigator; Amount:
-                    INR 8.75 Lakhs; Duration: 2019-2020, (Ongoing)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Project-4:</strong> Development of All Earth
-                    Abundant Elements based Nano-heterostructures for Solar
-                    Driven Water Splitting; Sponsoring Agency : CSIR ; Role :
-                    Principle Investigator; Amount: INR 13.5 Lakhs; Duration:
-                    2019-2022, (Ongoing)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Project-3:</strong> Lead free inorganic halide
-                    perovskite nanostructures for solution-processable
-                    photovoltaic cell; Sponsoring Agency: SERB-Early Career
-                    Research Award Scheme, Role : Principle Investigator;
-                    Amount: INR 36 Lakhs; Duration: 2017-2020, (Ongoing)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Project-2:</strong> Wet-chemical approach to
-                    fabricate visible-near infrared light harvesting
-                    photoelectrodes; Sponsoring Agency: DST- under INSPIRE
-                    Faculty Award, Role : Principle Investigator; Amount: INR
-                    85 Lakhs; Duration : 2016-2021, (Ongoing)
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Project-1: </strong> Internet of Things (IoT)
-                    Enabled Portable Water Quality Monitoring System;
-                    Sponsoring Agency : IITI-CSIR CEERI Pilani; Role :
-                    Co-Investigator; Amount: INR 06 Lakhs; Duration:
-                    2017-2018, (Completed)
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </body>
-          <!-- content body ends -->
-          <!-- </html> -->
+              <div
+                class="d-flex position-relative align-items-center custom-list"
+              >
+                <ul>
+                  <li>
+                    <p>
+                      <strong>Project-6:</strong> Development of flexible
+                      electrode for flexible energy storage devices; Sponsoring
+                      Agency : NPIU-TEQIP-III ; Role : Co-Investigator; Amount:
+                      INR 14.38 Lakhs; Duration: 2019-2020, (Ongoing)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Project-5:</strong> Low Cost nanoadsorbent for the
+                      removal of heavy metal ion from waste water; Sponsoring
+                      Agency : NPIU-TEQIP-III ; Role : Co-Investigator; Amount:
+                      INR 8.75 Lakhs; Duration: 2019-2020, (Ongoing)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Project-4:</strong> Development of All Earth
+                      Abundant Elements based Nano-heterostructures for Solar
+                      Driven Water Splitting; Sponsoring Agency : CSIR ; Role :
+                      Principle Investigator; Amount: INR 13.5 Lakhs; Duration:
+                      2019-2022, (Ongoing)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Project-3:</strong> Lead free inorganic halide
+                      perovskite nanostructures for solution-processable
+                      photovoltaic cell; Sponsoring Agency: SERB-Early Career
+                      Research Award Scheme, Role : Principle Investigator;
+                      Amount: INR 36 Lakhs; Duration: 2017-2020, (Ongoing)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Project-2:</strong> Wet-chemical approach to
+                      fabricate visible-near infrared light harvesting
+                      photoelectrodes; Sponsoring Agency: DST- under INSPIRE
+                      Faculty Award, Role : Principle Investigator; Amount: INR
+                      85 Lakhs; Duration : 2016-2021, (Ongoing)
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <strong>Project-1: </strong> Internet of Things (IoT)
+                      Enabled Portable Water Quality Monitoring System;
+                      Sponsoring Agency : IITI-CSIR CEERI Pilani; Role :
+                      Co-Investigator; Amount: INR 06 Lakhs; Duration:
+                      2017-2018, (Completed)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </body>
+            <!-- content body ends -->
+            <!-- </html> -->
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- footer start  -->
-  <footer>
-    <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
-      <div>
-
-        <p
-          style="color: white; font-family: 'Quicksand',sans-serif; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
-
-          Department of Metallurgical Engineering and Materials Science,
-          Indian Institute of Technology Indore,
-          Khandwa Road, Simrol, Indore-453552, INDIA
-        </p>
-      </div>
-      <div id="templatemo_footer">
-
-        <p
-          style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 13px; margin-right: 20px; margin-left: 0;">
-          Copyright © 2023 NEM Lab IIT INDORE
-        </p>
+    </section>
+    <!-- footer start  -->
+    <footer>
+      <div id="templatemo_footer_wrapper" style="background-color: #0064bc">
         <div>
-          <p style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 14px; margin: 0;">
-            Developers :&nbsp;
-            <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Kumar
-              Singh</a>
-            &
-            <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
+          <p
+            style="
+              color: white;
+              font-family: 'Quicksand', sans-serif;
+              font-size: 15px;
+              text-align: center;
+              padding-top: 1%;
+              letter-spacing: 1px;
+            "
+          >
+            Department of Metallurgical Engineering and Materials Science,
+            Indian Institute of Technology Indore, Khandwa Road, Simrol,
+            Indore-453552, INDIA &nbsp;&nbsp;
+
+            <a
+              href="https://www.linkedin.com/company/materials-electrochemistry-lab-iiti/about/"
+              target="_blank"
+              style="border-radius: 2%"
+            >
+              <img
+                src="img/Index_page_photo/linkedinlogo2.jpg"
+                alt=""
+                height="50px"
+                style="border: 2px solid rgb(225, 229, 30)"
+              />
+            </a>
           </p>
         </div>
-        <div>
+        <div id="templatemo_footer">
+          <p
+            style="
+              color: rgb(255, 255, 255);
+              font-family: 'Quicksand', sans-serif;
+              font-size: 13px;
+              margin-right: 20px;
+              margin-left: 0;
+            "
+          >
+            Copyright © 2023 NEM Lab IIT INDORE
+          </p>
+          <div>
+            <p
+              style="
+                color: rgb(255, 255, 255);
+                font-family: 'Quicksand', sans-serif;
+                font-size: 14px;
+                margin: 0;
+              "
+            >
+              Developers :&nbsp;
+              <a
+                href="https://www.linkedin.com/in/shivam-singh-a19a32214/"
+                target="_blank"
+                style="font-size: 14px"
+              >
+                Shivam Kumar Singh</a
+              >
+              &
+              <a
+                href="https://www.linkedin.com/in/prosenjitmondal98/"
+                target="_blank"
+                style="font-size: 14px"
+                >Prosenjit Mondal</a
+              >
+            </p>
+          </div>
+          <div></div>
         </div>
       </div>
-    </div> <!-- end of footer -->
-    <a href="#" id="backToTop" style="
+      <!-- end of footer -->
+      <a
+        href="#"
+        id="backToTop"
+        style="
           display: none;
           border-radius: 10%;
           position: fixed;
@@ -316,30 +425,30 @@
           color: white;
           text-decoration: none;
           border-radius: 4px;
-        ">Top</a>
+        "
+        >Top</a
+      >
 
-    <script>
-      var slideIndex = 0;
-      showSlides();
+      <script>
+        var slideIndex = 0;
+        showSlides();
 
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  // Hide all slides
-          slides[i].style.animation = "";  // Reset the animation
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; // Hide all slides
+            slides[i].style.animation = ""; // Reset the animation
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          } // Loop back to the first slide
+          slides[slideIndex - 1].style.display = "contents"; // Show the next slide
+          slides[slideIndex - 1].style.animation = "slideInOut 5s"; // Apply the animation
+          setTimeout(showSlides, 3000); // Wait for 10 seconds before the next transition
         }
-        slideIndex++;
-        if (slideIndex > slides.length) { slideIndex = 1 }  // Loop back to the first slide
-        slides[slideIndex - 1].style.display = "contents";  // Show the next slide
-        slides[slideIndex - 1].style.animation = "slideInOut 5s";  // Apply the animation
-        setTimeout(showSlides, 3000);  // Wait for 10 seconds before the next transition
-      }
-
-
-
-    </script>
-  </footer>
-</body>
-
+      </script>
+    </footer>
+  </body>
 </html>

@@ -1,247 +1,341 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>Nano &amp; Energy Lab</title>
+    <meta
+      content="free css templates, website templates, CSS, HTML"
+      name="keywords"
+    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Simple Blue - Professional free XHTML/CSS template provided by templatemo.com"
+      name="description"
+    />
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      rel="stylesheet"
+    />
+    <link href="updated_style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script language="javascript" type="text/javascript">
+      function clearText(field) {
+        if (field.defaultValue == field.value) field.value = "";
+        else if (field.value == "") field.value = field.defaultValue;
+      }
+    </script>
+    <script src="change_button_color.js"></script>
+    <style type="text/css">
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
 
-<head>
-  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  <title>Nano &amp; Energy Lab</title>
-  <meta content="free css templates, website templates, CSS, HTML" name="keywords" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="Simple Blue - Professional free XHTML/CSS template provided by templatemo.com" name="description" />
-  <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
-  <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet" />
-  <link href="updated_style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet">
-  <script language="javascript" type="text/javascript">
-    function clearText(field) {
-      if (field.defaultValue == field.value) field.value = "";
-      else if (field.value == "") field.value = field.defaultValue;
-    }
-  </script>
-  <script src="change_button_color.js"></script>
-  <style type="text/css">
-    body {
-      font-family: "Quicksand", sans-serif;
-    }
+      .page-header {
+        padding-bottom: 9px;
+        margin: 20px 0 20px;
+        border-bottom: 1px solid #eeeeee;
+      }
 
-    .page-header {
-      padding-bottom: 9px;
-      margin: 20px 0 20px;
-      border-bottom: 1px solid #eeeeee;
-    }
+      .hero-unit {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #eeeeee;
+        border-radius: 6px;
+      }
 
-    .hero-unit {
-      padding: 10px;
-      margin-bottom: 10px;
-      background-color: #eeeeee;
-      border-radius: 6px;
-    }
+      .hero-unit h1 {
+        margin-bottom: 0;
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -1px;
+        color: inherit;
+      }
 
-    .hero-unit h1 {
-      margin-bottom: 0;
-      font-size: 60px;
-      line-height: 1;
-      letter-spacing: -1px;
-      color: inherit;
-    }
+      .hero-unit p {
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 30px;
+        color: inherit;
+      }
 
-    .hero-unit p {
-      font-size: 18px;
-      font-weight: 200;
-      line-height: 30px;
-      color: inherit;
-    }
+      .span8 {
+        width: 620px;
+      }
 
-    .span8 {
-      width: 620px;
-    }
+      .span3 {
+        width: 220px;
+      }
 
-    .span3 {
-      width: 220px;
-    }
+      .bg-black {
+        background-color: #000000;
+      }
 
-    .bg-black {
-      background-color: #000000;
-    }
+      .text-cream {
+        color: #FFFFE0"
 
-    .text-cream {
-      color: #FFFFE0"
+      }
 
-    }
+      .custom-container {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
 
-    .custom-container {
-      margin-left: 2%;
-      margin-right: 2%;
-      width: 96%;
+      }
 
-    }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1%;
+        margin: 0 0 10% 0;
+        /* Adding 50px margin to the bottom */
+        width: 100%;
+      }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1%;
-      margin: 0 0 10% 0;
-      /* Adding 50px margin to the bottom */
-      width: 100%;
-    }
+      .gallery-item {
+        background-color: #fff;
+        padding: auto;
+        border: 2px solid #a0a0a0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),
+          0 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+      }
 
-    .gallery-item {
-      background-color: #fff;
-      padding: auto;
-      border: 2px solid #a0a0a0;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3),
-        0 5px 5px rgba(0, 0, 0, 0.2);
-      border-radius: 4px;
-    }
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border-radius: 1%;
+      }
 
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      display: block;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      border-radius: 1%;
-    }
+      #templatemo_footer_wrapper {
+        position: relative;
+        clear: both;
+        /* Ensuring it doesn't float alongside other elements */
+      }
 
-    #templatemo_footer_wrapper {
-      position: relative;
-      clear: both;
-      /* Ensuring it doesn't float alongside other elements */
-    }
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+  </head>
 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  </style>
-</head>
-
-<body>
-  <div id="templatemo_banner_wrapper">
-    <div id="templatemo_banner">
-      <img id="img" src="img/iiti logo.png" alt="image" height="70" style="filter:brightness(1); margin-top: 0;" />
-      <div id="templatemo_banner_content">
-        <div class="header_01"><br><span style="font-size: 32px;">Nano & Energy Materials Lab</span></div>
-        <div class="header_02"> <span>Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
-          </span></div>
-      </div>
-      <div id="templatemo_header_wrapper">
-        <div id="templatemo_header">
-          <div class="abc">
-            <br />
-            <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="prof_kushwaha.html">Prof. Kushwaha</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="members.html">Members</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="research.html">Research</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="publications.html">Publications</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a style="color: rgb(255, 238, 87);" href="gallery.html">Gallery</a>
+  <body>
+    <div id="templatemo_banner_wrapper">
+      <div id="templatemo_banner">
+        <img
+          id="img"
+          src="img/iiti logo.png"
+          alt="image"
+          height="70"
+          style="filter: brightness(1); margin-top: 0"
+        />
+        <div id="templatemo_banner_content">
+          <div class="header_01">
+            <br /><span style="font-size: 32px"
+              >Nano & Energy Materials Lab</span
+            >
+          </div>
+          <div class="header_02">
+            <span
+              >Research Group of Prof. Kushwaha &NonBreakingSpace;&nbsp;
+            </span>
+          </div>
+        </div>
+        <div id="templatemo_header_wrapper">
+          <div id="templatemo_header">
+            <div class="abc">
+              <br />
+              <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="prof_kushwaha.html">Prof. Kushwaha</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="members.html">Members</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="research.html">Research</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="publications.html">Publications</a
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a style="color: rgb(255, 238, 87)" href="gallery.html"
+                >Gallery</a
+              >
+            </div>
           </div>
         </div>
       </div>
+      <hr
+        style="
+          margin-top: 0px;
+          margin-left: 0px;
+          border: none;
+          background-color: rgba(0, 100, 188, 0.8);
+          width: 100%;
+          height: 8px;
+        "
+      />
     </div>
-    <hr
-      style="margin-top:0px; margin-left:0px;border: none; background-color: rgba(0, 100, 188, 0.8); width: 100%; height: 8px;">
-  </div>
 
-  <section class="custom-container mt-0">
-    <div class="row shadow-lg p-3 mb-1 bg-white rounded">
-      <div id="templatemo_content_wrapper">
-        <h2 style="font-weight: 700; font-size: 25px ;text-align: center;">
-          Gallery
-        </h2>
-        <div id="column_w1000">
-          <div id="content_buttons">
-            <a href="gallery.html" target="iframe1">
-              <button class="button" id="button2" onclick="changeButtonColor(this)">
-                2023
-              </button>
-            </a>
-            <a href="yr2022.html" target="iframe1">
-              <button class="button" id="button3" onclick="changeButtonColor(this)">
-                2022
-              </button>
-            </a>
-            <a href="yr2021.html" target="iframe1">
-              <button style="background-color: #b9e2f5; color: black" class="button" id="button4"
-                onclick="changeButtonColor(this)">
-                2021
-              </button>
-            </a>
-            <a href="older.html" target="iframe1">
-              <button class="button" id="button5" onclick="changeButtonColor(this)">
-                Older
-              </button>
-            </a>
-          </div>
-          <br /><br />
-          <div class="gallery">
-            <div class="gallery-item">
-              <img src="img/year wise/2021/1-2021.jpg" alt="Image 1" />
-
+    <section class="custom-container mt-0">
+      <div class="row shadow-lg p-3 mb-1 bg-white rounded">
+        <div id="templatemo_content_wrapper">
+          <h2 style="font-weight: 700; font-size: 25px; text-align: center">
+            Gallery
+          </h2>
+          <div id="column_w1000">
+            <div id="content_buttons">
+              <a href="gallery.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button2"
+                  onclick="changeButtonColor(this)"
+                >
+                  2023
+                </button>
+              </a>
+              <a href="yr2022.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button3"
+                  onclick="changeButtonColor(this)"
+                >
+                  2022
+                </button>
+              </a>
+              <a href="yr2021.html" target="iframe1">
+                <button
+                  style="background-color: #b9e2f5; color: black"
+                  class="button"
+                  id="button4"
+                  onclick="changeButtonColor(this)"
+                >
+                  2021
+                </button>
+              </a>
+              <a href="older.html" target="iframe1">
+                <button
+                  class="button"
+                  id="button5"
+                  onclick="changeButtonColor(this)"
+                >
+                  Older
+                </button>
+              </a>
             </div>
-            <div class="gallery-item">
-              <img src="img/year wise/2021/2-2021.jpg" alt="Image 1" />
+            <br /><br />
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="img/year wise/2021/1-2021.jpg" alt="Image 1" />
+              </div>
+              <div class="gallery-item">
+                <img src="img/year wise/2021/2-2021.jpg" alt="Image 1" />
+              </div>
+              <div class="gallery-item">
+                <img src="img/year wise/2021/3-2021.jpg" alt="Image 1" />
+              </div>
+              <div class="gallery-item">
+                <img src="img/year wise/2021/4-2021.jpg" alt="Image 1" />
+              </div>
+              <div class="gallery-item">
+                <img src="img/year wise/2021/5-2021.jpg" alt="Image 1" />
+              </div>
 
+              <div class="gallery-item">
+                <img src="img/year wise/2021/7-2021.jpg" alt="Image 1" />
+              </div>
+              <div class="gallery-item">
+                <img src="img/year wise/2021/8-2021.jpg" alt="Image 1" />
+              </div>
+              <div class="gallery-item">
+                <img src="img/year wise/2021/9-2021.jpg" alt="Image 1" />
+              </div>
+
+              <!-- You can add more items here -->
             </div>
-            <div class="gallery-item">
-              <img src="img/year wise/2021/3-2021.jpg" alt="Image 1" />
-
-            </div>
-            <div class="gallery-item">
-              <img src="img/year wise/2021/4-2021.jpg" alt="Image 1" />
-
-            </div>
-            <div class="gallery-item">
-              <img src="img/year wise/2021/5-2021.jpg" alt="Image 1" />
-
-            </div>
-
-            <div class="gallery-item">
-              <img src="img/year wise/2021/7-2021.jpg" alt="Image 1" />
-
-            </div>
-            <div class="gallery-item">
-              <img src="img/year wise/2021/8-2021.jpg" alt="Image 1" />
-
-            </div>
-            <div class="gallery-item">
-              <img src="img/year wise/2021/9-2021.jpg" alt="Image 1" />
-
-            </div>
-
-
-            <!-- You can add more items here -->
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <div id="templatemo_footer_wrapper" style="background-color: #0064BC">
-    <div>
-      <p
-        style="color: white; font-family: 'Quicksand',sans-serif; font-size: 15px; text-align: center;padding-top: 1%; letter-spacing: 1px;">
-        Department of Metallurgical Engineering and Materials Science,
-        Indian Institute of Technology Indore,
-        Khandwa Road, Simrol, Indore-453552, INDIA
-      </p>
-    </div>
-    <div id="templatemo_footer">
-      <p
-        style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 13px; margin-right: 20px; margin-left: 0;">
-        Copyright © 2023 NEM Lab IIT INDORE
-      </p>
+    </section>
+    <div id="templatemo_footer_wrapper" style="background-color: #0064bc">
       <div>
-        <p style="color: rgb(255, 255, 255); font-family: 'Quicksand',sans-serif; font-size: 14px; margin: 0;">
-          Developers :&nbsp;
-          <a href="https://www.linkedin.com/in/shivam-singh-a19a32214/" style="font-size: 14px;"> Shivam Kumar Singh</a>
-          &
-          <a href="https://www.linkedin.com/in/prosenjitmondal98/" style="font-size: 14px;">Prosenjit Mondal</a>
+        <p
+          style="
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            padding-top: 1%;
+            letter-spacing: 1px;
+          "
+        >
+          Department of Metallurgical Engineering and Materials Science, Indian
+          Institute of Technology Indore, Khandwa Road, Simrol, Indore-453552,
+          INDIA &nbsp;&nbsp;
+
+          <a
+            href="https://www.linkedin.com/company/materials-electrochemistry-lab-iiti/about/"
+            target="_blank"
+            style="border-radius: 2%"
+          >
+            <img
+              src="img/Index_page_photo/linkedinlogo2.jpg"
+              alt=""
+              height="50px"
+              style="border: 2px solid rgb(225, 229, 30)"
+            />
+          </a>
         </p>
       </div>
+      <div id="templatemo_footer">
+        <p
+          style="
+            color: rgb(255, 255, 255);
+            font-family: 'Quicksand', sans-serif;
+            font-size: 13px;
+            margin-right: 20px;
+            margin-left: 0;
+          "
+        >
+          Copyright © 2023 NEM Lab IIT INDORE
+        </p>
+        <div>
+          <p
+            style="
+              color: rgb(255, 255, 255);
+              font-family: 'Quicksand', sans-serif;
+              font-size: 14px;
+              margin: 0;
+            "
+          >
+            Developers :&nbsp;
+            <a
+              href="https://www.linkedin.com/in/shivam-singh-a19a32214/"
+              target="_blank"
+              style="font-size: 14px"
+            >
+              Shivam Kumar Singh</a
+            >
+            &
+            <a
+              href="https://www.linkedin.com/in/prosenjitmondal98/"
+              target="_blank"
+              style="font-size: 14px"
+              >Prosenjit Mondal</a
+            >
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-  <a href="#" id="backToTop" style="
+    <a
+      href="#"
+      id="backToTop"
+      style="
         display: none;
         border-radius: 10%;
         position: fixed;
@@ -253,7 +347,8 @@
         color: white;
         text-decoration: none;
         border-radius: 4px;
-    ">Top</a>
-</body>
-
+      "
+      >Top</a
+    >
+  </body>
 </html>
